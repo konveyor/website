@@ -28,10 +28,7 @@ export default function ForkliftPage() {
       <Banner
         title={title}
         header="Rehost your Virtual Machines (VMs) to KubeVirt"
-        text="Migrate virtual machines to Kubernetes at scale with the
-        Forklift. Whether you are rehosting a few or hundreds of VMs
-        to KubeVirt, Forklift helps you minimize downtime when you
-        lift and shift these applications."
+        text="Migrate virtual machines to Kubernetes at scale with the open source tool Forklift. Whether you are rehosting a few or hundreds of VMs to KubeVirt, Forklift helps you minimize downtime when you lift and shift these applications."
         img={<Forklift alt="" />}
       >
         <IconBox
@@ -70,7 +67,7 @@ export default function ForkliftPage() {
             </p>
             <p className={ledeStyle}>Migration Analytics</p>
             <p className={paragraphStyle}>
-              Validate the compatibility of your virtual machinbe before
+              Validate the compatibility of your virtual machine before
               executing your migration
             </p>
           </div>
@@ -100,7 +97,7 @@ export default function ForkliftPage() {
         <h2 className={headingStyle}>Why Forklift</h2>
         <p className={ledeStyle}>
           Forklift provides a simplistic way to migrate your virtual machines at
-          scale to kubernetes from traditional hypervisors like VMware and Red
+          scale to Kubernetes from traditional hypervisors like VMware and Red
           Hat Virtualization. Forklift is based on core linux v2v technologies
           that have been proven for years.
         </p>

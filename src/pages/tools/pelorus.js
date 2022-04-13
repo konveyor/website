@@ -21,11 +21,7 @@ export default function PelorusPage() {
       <Banner
         title={title}
         header="Measure Software Delivery Performance on Kubernetes"
-        text="Prove the value of modernization. With the Pelorus tool, you
-        can measure the key metrics to software delivery performance
-        (lead time for change, deployment frequency, mean time to
-        restore, and change failure rate) and enable metrics driven
-        transformation."
+        text="Pelorus helps IT teams measure the impact of application modernization on their organization's overall performance. The open source tool Pelorus does this by gathering metrics in key IT areas that have been proven to impact the value they deliver to the organization."
         img={<Pelorus alt="" />}
       >
         <p className={`${pStyle} italic`}>

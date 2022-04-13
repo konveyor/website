@@ -54,9 +54,9 @@ export default function IndexPage({ data }) {
               <WidowControl text="Accelerate Your Application Modernization to Kubernetes" />
             </h1>
             <p className={`${paragraphStyle} text-base-200 my-6 lg:my-8`}>
-              The Konveyor community modernizes applications by providing open
-              source tools to rehost, replatform, and refactor applications to
-              Kubernetes and cloud-native technologies.
+              The Konveyor community helps modernize applications by providing
+              open source tools to rehost, replatform, and refactor applications
+              to Kubernetes and cloud-native technologies.
             </p>
             <div className="flex flex-wrap gap-3">
               <IconBox title="Get Community Updates" url="#" />
@@ -179,8 +179,8 @@ export default function IndexPage({ data }) {
                   </p>
                   <p className={paragraphStyle}>
                     Streamline the modernization of your application portfolio
-                    to Kubernetes. Through related tools, Tackle gives you
-                    insight throughout the adoption process – whether you're
+                    to Kubernetes. Through interrelated tools, Tackle gives you
+                    insight throughout the adoption process — whether you're
                     making decisions at the portfolio or application level.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
@@ -208,7 +208,7 @@ export default function IndexPage({ data }) {
                     Rehost your Virtual Machines (VMs) to KubeVirt
                   </p>
                   <p className={paragraphStyle}>
-                    Migrate virtual machines to Kubernetes at scale with the
+                    Migrate virtual machines to Kubernetes at scale with
                     Forklift. Whether you are rehosting a few or hundreds of VMs
                     to KubeVirt, Forklift helps you minimize downtime when you
                     lift and shift these applications.

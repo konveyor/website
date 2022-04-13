@@ -35,10 +35,7 @@ export default function TacklePage() {
       <Banner
         title={title}
         header="Assess, Prioritize, and Refactor Applications to Kubernetes"
-        text="Streamline the modernization of your application portfolio
-      to Kubernetes. Through related tools, Tackle gives you
-      insight throughout the adoption process — whether you're
-      making decisions at the portfolio or application level."
+        text="Streamline the modernization of your application portfolio to Kubernetes. Through interrelated open source tools, Tackle gives you insight throughout the adoption process — whether you're making decisions at the portfolio or application level."
         img={<Tackle alt="" />}
       >
         <IconBox title="Documentation" url="https://tackle-docs.konveyor.io/" />
@@ -77,9 +74,10 @@ export default function TacklePage() {
                       tools.
                     </li>
                     <li>
-                      Categorize and group your applications by dimensions that
-                      make sense for your organization. You can use the
-                      prepackaged options or create your own.
+                      Categorize and group applications by different dimensions
+                      aligned with technical criteria or your organization
+                      structure. You can use the prepackaged options or create
+                      your own.
                     </li>
                     <li>
                       See which applications are suitable for containerization
@@ -87,7 +85,8 @@ export default function TacklePage() {
                     </li>
                     <li>
                       Assign priority, display estimated migration effort, and
-                      assign actions to indiviual applications.
+                      define the most suitable migration strategy for individual
+                      applications.
                     </li>
                     <li>
                       Detect the changes needed to containerize your Java

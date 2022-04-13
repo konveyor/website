@@ -43,7 +43,8 @@ export default function CommunityPage() {
             The Konveyor community modernizes applications by providing open
             source tools to rehost, replatform, and refactor applications to
             Kubernetes and cloud-native technologies. We'd love you to join us!
-            Here's a few ways to find out what's happening and get involved.
+            Here's a few ways to find out what's happening and
+            get&nbsp;involved.
           </p>
         </div>
       </section>
@@ -78,8 +79,8 @@ export default function CommunityPage() {
             url="https://www.youtube.com/channel/UCQ3pW3gSBeCy0tj1J0ub2bw/videos"
             icon={<User alt="" />}
           >
-            Join our monthly office hours to learn about Kubernetes
-            security&nbsp;topics.
+            Practitioners share migration strategies, lessons learned, and tools
+            used at community live virtual&nbsp;meetups.
           </Callout>
           <Callout
             className="lg:order-5"
@@ -88,7 +89,7 @@ export default function CommunityPage() {
             icon={<Slack alt="" />}
           >
             Have questions about your migration project or how to use our tools?
-            Ping us on Slack.
+            Ping us on&nbsp;Slack.
           </Callout>
           <Callout
             className="lg:order-7"
@@ -97,15 +98,12 @@ export default function CommunityPage() {
             icon={<Mail alt="" />}
           >
             Stay up-to-speed with all things Konveyor and migrating to
-            Kubernetes by subscribing to our email list
+            Kubernetes by subscribing to our email&nbsp;list.
           </Callout>
 
           <div className="mt-8 lg:mt-0 lg:order-2 flex flex-col h-full">
             <h2 className={headingStyle}>Contribute</h2>
-            <p className={paragraphStyle}>
-              As we move through the open sourcing of StackRox, there are many
-              ways to&nbsp;contribute:
-            </p>
+            <p className={paragraphStyle}>Ways to&nbsp;contribute:</p>
           </div>
 
           <Callout
@@ -116,7 +114,7 @@ export default function CommunityPage() {
             icon={<Mic alt="" />}
           >
             Share your experience on migrating to Kubernetes with others. Reach
-            out to get started
+            out to get&nbsp;started.
           </Callout>
           <Callout
             className="lg:order-6"
@@ -126,7 +124,7 @@ export default function CommunityPage() {
             icon={<KonveyorIcon alt="" />}
           >
             We develop multiple open source tools. We would love for you to take
-            it for a test run and learn more about these tools.
+            it for a test run and learn more about these&nbsp;tools.
           </Callout>
           <Callout
             className="lg:order-8"
@@ -136,7 +134,7 @@ export default function CommunityPage() {
             icon={<Edit alt="" />}
           >
             Blogs are open for contribution. Is there a topic you are interested
-            in? Let the organizers know about it.
+            in? Let the organizers know about&nbsp;it.
           </Callout>
         </div>
       </section>

@@ -28,10 +28,7 @@ export default function CranePage() {
       <Banner
         title={title}
         header="Rehost Applications Between Kubernetes Clusters"
-        text="With Crane, you can move container-based workloads between
-        clusters of different Kubernetes distributions at scale
-        while keeping state, removing environment-specific
-        configuration, and automating application deployments."
+        text="With the open source tool Crane, you can move container-based workloads between clusters of different Kubernetes distributions at scale while keeping state, removing environment-specific configuration, and automating application deployments."
         img={<Crane alt="" />}
       >
         <IconBox title="Documentation" url="#" />
@@ -65,7 +62,7 @@ export default function CranePage() {
               Migrate Between different Kubernetes distributions
             </p>
             <p className={paragraphStyle}>
-              Crane can help you update your kubernetes manifest for your latest
+              Crane can help you update your Kubernetes manifest for your latest
               distribution and version.
             </p>
           </div>
