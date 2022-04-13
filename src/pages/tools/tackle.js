@@ -132,7 +132,7 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Icon3
+                  <Icon5
                     alt=""
                     className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
@@ -157,7 +157,7 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:w-2/5 flex justify-center">
-                  <Icon4
+                  <Icon3
                     alt=""
                     className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
@@ -185,7 +185,7 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Icon5
+                  <Icon4
                     alt=""
                     className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
