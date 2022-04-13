@@ -338,7 +338,10 @@ export default function IndexPage({ data }) {
       </section>
       <section className="z-1 my-12 md:mt-24 md:mb-40 page-wrapper">
         <div className="w-full rounded-2xl mt-10 md:mt-16 md:mb-8 lg:mb-24 border-2 border-base-400 bg-primary-200 dark:bg-base-300 p-4 md:p-8 xl:p-16 flex flex-col md:flex-row gap-4 md:gap-8 xl:gap-16">
-          <ReportCover />
+          <a href="/modernization-report/">
+            <ReportCover />
+            <p className="sr-only">Read the report</p>
+          </a>
           <div>
             <h2 className={`${headingStyle} !text-left text-primary-800`}>
               The State of Application Modernization Report 2022
