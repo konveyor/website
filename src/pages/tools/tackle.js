@@ -1,6 +1,13 @@
 import React from 'react'
 import Seo from '../../components/seo'
 import { ReactComponent as Tackle } from '../../images/tackle.svg'
+import { ReactComponent as Icon1 } from '../../images/tackle/icon-01.svg'
+import { ReactComponent as Icon2 } from '../../images/tackle/icon-02.svg'
+import { ReactComponent as Icon3 } from '../../images/tackle/icon-03.svg'
+import { ReactComponent as Icon4 } from '../../images/tackle/icon-04.svg'
+import { ReactComponent as Icon5 } from '../../images/tackle/icon-05.svg'
+import { ReactComponent as Icon6 } from '../../images/tackle/icon-06.svg'
+import { ReactComponent as Icon7 } from '../../images/tackle/icon-07.svg'
 import CommunityLinks from '../../components/community-links'
 import IconBox from '../../components/iconbox'
 import Banner from '../../components/banner.js'
@@ -56,9 +63,9 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Tackle
+                  <Icon1
                     alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
+                    className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
                 </div>
                 <div className="md:w-3/5">
@@ -100,9 +107,9 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:w-2/5 flex justify-center">
-                  <Tackle
+                  <Icon2
                     alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
+                    className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
                 </div>
                 <div className="md:w-3/5">
@@ -126,9 +133,9 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Tackle
+                  <Icon3
                     alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
+                    className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
                 </div>
                 <div className="md:w-3/5">
@@ -151,9 +158,9 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:w-2/5 flex justify-center">
-                  <Tackle
+                  <Icon4
                     alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
+                    className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
                 </div>
                 <div className="md:w-3/5">
@@ -179,9 +186,9 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Tackle
+                  <Icon5
                     alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
+                    className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
                 </div>
                 <div className="md:w-3/5">
@@ -205,9 +212,9 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:w-2/5 flex justify-center">
-                  <Tackle
+                  <Icon6
                     alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
+                    className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
                 </div>
                 <div className="md:w-3/5">
@@ -229,9 +236,9 @@ export default function TacklePage() {
             <div className={projectSectStyle}>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Tackle
+                  <Icon7
                     alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
+                    className="max-w-[15rem] text-primary-800 dark:text-white"
                   />
                 </div>
                 <div className="md:w-3/5">
