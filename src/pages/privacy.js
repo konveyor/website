@@ -3,7 +3,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
 import Seo from '../components/seo'
 
-export default function CodeConductPage({ data }) {
+export default function LegalPage({ data }) {
   const {
     body,
     frontmatter: { title },
@@ -28,8 +28,8 @@ export default function CodeConductPage({ data }) {
 }
 
 export const query = graphql`
-  query Conduct {
-    mdx(fileAbsolutePath: { regex: "/legal/index_code_of_conduct.mdx/" }) {
+  query Legal {
+    mdx(fileAbsolutePath: { regex: "/legal/index_privacy.mdx/" }) {
       id
       body
       frontmatter {

@@ -70,18 +70,6 @@ export default function CranePage() {
             </p>
           </div>
           <div className="text-center">
-            <p className="inline-block h-16 mb-4 rounded-full p-4 bg-success-200 text-success-800">
-              <Cloud alt="" />
-            </p>
-            <p className={`md:min-h-[2.8em] lg:min-h-[2.666em] ${ledeStyle}`}>
-              Migrate at scale
-            </p>
-            <p className={paragraphStyle}>
-              Execute large migrations or cluster evacuations in a fully
-              automated manner.
-            </p>
-          </div>
-          <div className="text-center">
             <p className="inline-block h-16 mb-4 rounded-full p-4 bg-alert-200 text-alert-800">
               <Server alt="" />
             </p>
@@ -91,6 +79,18 @@ export default function CranePage() {
             <p className={paragraphStyle}>
               Export existing apps to Git, and automate your deployments using
               continuous delivery
+            </p>
+          </div>
+          <div className="text-center">
+            <p className="inline-block h-16 mb-4 rounded-full p-4 bg-success-200 text-success-800">
+              <Cloud alt="" />
+            </p>
+            <p className={`md:min-h-[2.8em] lg:min-h-[2.666em] ${ledeStyle}`}>
+              Migrate at scale
+            </p>
+            <p className={paragraphStyle}>
+              Execute large migrations or cluster evacuations in a fully
+              automated manner.
             </p>
           </div>
         </div>
@@ -117,15 +117,22 @@ export default function CranePage() {
               applications between Kubernetes clusters using Crane CLI.
             </p>
             <div className="flex flex-wrap gap-3">
-              <IconBox title="Documentation" url="#" />
-              <IconBox title="Get Started" url="#" dark="true" />
+              <IconBox
+                title="Documentation"
+                url="https://crane-docs.konveyor.io/"
+              />
+              <IconBox
+                title="Get Started"
+                url="https://crane-docs.konveyor.io/content/getting-started/installation/"
+                dark="true"
+              />
             </div>
           </div>
           <div className="video-embed">
             <iframe
               className="rounded-lg"
               title="YouTube Video"
-              src="https://www.youtube.com/embed/RDVUZeiavFQ?rel=0"
+              src="https://www.youtube.com/embed/kp5vFIg0BhQ?rel=0"
               frameborder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen

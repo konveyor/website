@@ -53,7 +53,9 @@ export default function ToolsPage() {
               />
               <LogoBox
                 title="Replatform Applications to Kubernetes"
-                url="/tools/move2kube/"
+                url="https://move2kube.konveyor.io/"
+                rel="noopener noreferrer"
+                target="_blank"
                 icon={
                   <Move2Kube
                     alt="Konveyor Move2Kube"

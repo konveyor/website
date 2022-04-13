@@ -34,8 +34,12 @@ export default function TacklePage() {
       making decisions at the portfolio or application level."
         img={<Tackle alt="" />}
       >
-        <IconBox title="Documentation" url="#" />
-        <IconBox title="Get Started" url="#" dark="true" />
+        <IconBox title="Documentation" url="https://tackle-docs.konveyor.io/" />
+        <IconBox
+          title="Get Started"
+          url="https://tackle-docs.konveyor.io/documentation/doc-installing-and-using-tackle/master/index.html"
+          dark="true"
+        />
       </Banner>
 
       <section className="z-0 py-12 md:pt-32 md:pb-40 lg:pt-40 relative dark:after:opacity-60 after:z-[-1] after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
@@ -85,7 +89,10 @@ export default function TacklePage() {
                     </li>
                   </ul>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Learn More" url="#" />
+                    <IconBox
+                      title="Learn More"
+                      url="https://github.com/konveyor/tackle"
+                    />
                   </div>
                 </div>
               </div>
@@ -108,7 +115,10 @@ export default function TacklePage() {
                     a time.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Learn More" url="#" />
+                    <IconBox
+                      title="Learn More"
+                      url="https://github.com/konveyor/tackle-container-advisor#readme"
+                    />
                   </div>
                 </div>
               </div>
@@ -130,7 +140,10 @@ export default function TacklePage() {
                     target&nbsp;runtime.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Learn More" url="#" />
+                    <IconBox
+                      title="Learn More"
+                      url="https://github.com/konveyor/tackle-config-discover"
+                    />
                   </div>
                 </div>
               </div>
@@ -155,7 +168,10 @@ export default function TacklePage() {
                     results as files.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Learn More" url="#" />
+                    <IconBox
+                      title="Learn More"
+                      url="https://github.com/konveyor/tackle-diva"
+                    />
                   </div>
                 </div>
               </div>
@@ -178,7 +194,10 @@ export default function TacklePage() {
                     native environment that works with HA DB cluster.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Learn More" url="#" />
+                    <IconBox
+                      title="Learn More"
+                      url="https://github.com/konveyor/tackle-diva/tree/main/doa"
+                    />
                   </div>
                 </div>
               </div>
@@ -199,7 +218,10 @@ export default function TacklePage() {
                     using automatically generated unit tests.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Learn More" url="#" />
+                    <IconBox
+                      title="Learn More"
+                      url="https://github.com/konveyor/tackle-test-generator-cli"
+                    />
                   </div>
                 </div>
               </div>
@@ -224,7 +246,10 @@ export default function TacklePage() {
                     domains of interest and refactor them into microservices.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Learn More" url="#" />
+                    <IconBox
+                      title="Learn More"
+                      url="https://github.com/konveyor/tackle-data-gravity-insights"
+                    />
                   </div>
                 </div>
               </div>

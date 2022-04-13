@@ -1,5 +1,6 @@
 import React from 'react'
 import Seo from '../components/seo'
+import HeroImage from '../components/hero-image'
 import ShareButtons from '../components/sharebuttons'
 import WidowControl from '../components/widow-control'
 import { graphql, StaticQuery } from 'gatsby'
@@ -48,6 +49,10 @@ export default function Page({ children, ...props }) {
             description={description}
             image={image}
             article={true}
+          />
+          <HeroImage
+            innerClassName="mt-6 rounded-md before:text-transparent before:absolute before:pointer-events-none before:pointer-events-none before:z-[1] before:w-full before:h-full before:shadow-image before:rounded-md relative rounded-md"
+            image={image}
           />
           <h1 className="mt-6 font-medium text-3xl md:text-4xl font-headings !leading-snug">
             <WidowControl text={title} />

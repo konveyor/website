@@ -19,18 +19,10 @@ export const Footer = () => {
             <li className={listStyle}>Sponsored by Red Hat, Inc.</li>
             <li className={listStyle}>
               <Link
-                className="underline hover:text-base-200 border-base-500 dark:hover:text-secondary-900 focus:outline-none focus:ring-2 focus:ring-base-200 dark:focus:ring-secondary-900"
-                to="/code-conduct/"
-              >
-                Code of Conduct
-              </Link>
-            </li>
-            <li className={listStyle}>
-              <Link
                 className="underline hover:text-base-200 dark:hover:text-secondary-900 focus:outline-none focus:ring-2 focus:ring-base-200 dark:focus:ring-secondary-900"
-                to="/legal/"
+                to="/privacy/"
               >
-                Legal & Privacy
+                Privacy Statement
               </Link>
             </li>
           </ul>

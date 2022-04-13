@@ -4,7 +4,7 @@ import Seo from '../components/seo'
 import HeroImage from '../components/hero-image'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ReactComponent as Slack } from '../images/slack-icon.svg'
-import { ReactComponent as HomeBanner } from '../images/homepage-hero.svg'
+import { ReactComponent as HomeBanner } from '../images/homepage-diagram.svg'
 import { ReactComponent as Crane } from '../images/crane.svg'
 import { ReactComponent as Move2Kube } from '../images/move2kube.svg'
 import { ReactComponent as Tackle } from '../images/tackle.svg'
@@ -18,6 +18,9 @@ import CommunityLinks from '../components/community-links'
 
 export default function IndexPage({ data }) {
   const posts = data.allMdx.nodes
+  const slack = data.site.siteMetadata.socialMedia.filter(
+    (media) => media.platform === 'slack',
+  )[0].url
 
   const headingStyle =
     'font-headings text-3xl lg:text-5xl text-base-800 text-center mb-2 lg:mb-4'
@@ -59,7 +62,7 @@ export default function IndexPage({ data }) {
               <IconBox title="Get Community Updates" url="#" />
               <IconBox
                 title="Join our Slack Group"
-                url="#"
+                url={slack}
                 icon={<Slack alt="" />}
                 dark="true"
               />
@@ -88,7 +91,7 @@ export default function IndexPage({ data }) {
             Watch how all of these tools work together in this{' '}
             <a
               className={aStyle}
-              href="#"
+              href="https://youtu.be/aKDFFDXPHYk"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -118,7 +121,11 @@ export default function IndexPage({ data }) {
                     configuration, and automating application deployments.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Get Started" url="#" dark="true" />
+                    <IconBox
+                      title="Get Started"
+                      url="https://github.com/konveyor/crane"
+                      dark="true"
+                    />
                     <IconBox title="Learn More" url="/tools/crane/" />
                   </div>
                 </div>
@@ -144,8 +151,15 @@ export default function IndexPage({ data }) {
                     your workloads running on Kubernetes.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Get Started" url="#" dark="true" />
-                    <IconBox title="Learn More" url="/tools/move2kube/" />
+                    <IconBox
+                      title="Get Started"
+                      url="https://move2kube.konveyor.io/installation"
+                      dark="true"
+                    />
+                    <IconBox
+                      title="Learn More"
+                      url="https://move2kube.konveyor.io/"
+                    />
                   </div>
                 </div>
               </div>
@@ -170,7 +184,11 @@ export default function IndexPage({ data }) {
                     making decisions at the portfolio or application level.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Get Started" url="#" dark="true" />
+                    <IconBox
+                      title="Get Started"
+                      url="https://tackle-docs.konveyor.io/documentation/doc-installing-and-using-tackle/master/index.html"
+                      dark="true"
+                    />
                     <IconBox title="Learn More" url="/tools/tackle/" />
                   </div>
                 </div>
@@ -196,7 +214,11 @@ export default function IndexPage({ data }) {
                     lift and shift these applications.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Get Started" url="#" dark="true" />
+                    <IconBox
+                      title="Get Started"
+                      url="https://github.com/konveyor/forklift-documentation/"
+                      dark="true"
+                    />
                     <IconBox title="Learn More" url="/tools/forklift/" />
                   </div>
                 </div>
@@ -229,7 +251,7 @@ export default function IndexPage({ data }) {
                     why compatibility hasn’t been established yet and what the
                     status is in this{' '}
                     <a
-                      href="#"
+                      href="https://github.com/konveyor/pelorus/projects/9"
                       className={aStyle}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -239,7 +261,11 @@ export default function IndexPage({ data }) {
                     .
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox title="Get Started" url="#" dark="true" />
+                    <IconBox
+                      title="Get Started"
+                      url="https://pelorus.readthedocs.io/en/latest/"
+                      dark="true"
+                    />
                     <IconBox title="Learn More" url="/tools/pelorus/" />
                   </div>
                 </div>
@@ -285,7 +311,7 @@ export default function IndexPage({ data }) {
           <CommunityMembers />
           <IconBox
             title="Reach out to become a community supporter"
-            url="#"
+            url="mailto:konveyorio@gmail.com"
             icon={<ArrowRight alt="" />}
             right="true"
           />

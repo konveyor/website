@@ -34,8 +34,15 @@ export default function ForkliftPage() {
         lift and shift these applications."
         img={<Forklift alt="" />}
       >
-        <IconBox title="Documentation" url="#" />
-        <IconBox title="Get Started" url="#" dark="true" />
+        <IconBox
+          title="Documentation"
+          url="https://github.com/konveyor/forklift-documentation/"
+        />
+        <IconBox
+          title="Get Started"
+          url="https://github.com/konveyor/forklift-documentation/"
+          dark="true"
+        />
       </Banner>
 
       <section className="z-0 py-12 lg:pt-32 md:pb-40 relative dark:before:opacity-60 dark:after:opacity-60 before:scale-x-[-1] before:z-[-1] before:bg-wave-pattern before:bg-no-repeat before:text-transparent before:w-full after:z-[-1] before:absolute before:h-full before:top-0 before:bg-left-top after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
@@ -99,8 +106,15 @@ export default function ForkliftPage() {
         </p>
 
         <div className="flex flex-wrap gap-3">
-          <IconBox title="Documentation" url="#" />
-          <IconBox title="Get Started" url="#" dark="true" />
+          <IconBox
+            title="Documentation"
+            url="https://github.com/konveyor/forklift-documentation/"
+          />
+          <IconBox
+            title="Get Started"
+            url="https://github.com/konveyor/forklift-documentation/"
+            dark="true"
+          />
         </div>
       </section>
 

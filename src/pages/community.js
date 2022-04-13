@@ -27,8 +27,8 @@ export default function CommunityPage() {
   )
 
   // There must be a better way of doing this. If so, send suggestion.
-  const twitter = site.siteMetadata.socialMedia.filter(
-    (media) => media.platform === 'twitter',
+  const slack = site.siteMetadata.socialMedia.filter(
+    (media) => media.platform === 'slack',
   )[0].url
 
   return (
@@ -75,7 +75,7 @@ export default function CommunityPage() {
           <Callout
             className="lg:order-3"
             title="Attend meetups"
-            url="#"
+            url="https://www.youtube.com/channel/UCQ3pW3gSBeCy0tj1J0ub2bw/videos"
             icon={<User alt="" />}
           >
             Join our monthly office hours to learn about Kubernetes
@@ -84,7 +84,7 @@ export default function CommunityPage() {
           <Callout
             className="lg:order-5"
             title="Slack"
-            url="#"
+            url={slack}
             icon={<Slack alt="" />}
           >
             Have questions about your migration project or how to use our tools?
@@ -112,7 +112,7 @@ export default function CommunityPage() {
             title="Present to the community"
             className="lg:order-4"
             type="warning"
-            url="#"
+            url="mailto:konveyorio@gmail.com"
             icon={<Mic alt="" />}
           >
             Share your experience on migrating to Kubernetes with others. Reach
@@ -122,7 +122,7 @@ export default function CommunityPage() {
             className="lg:order-6"
             title="Konveyor Tool Suite"
             type="warning"
-            url="#"
+            url="https://github.com/konveyor"
             icon={<KonveyorIcon alt="" />}
           >
             We develop multiple open source tools. We would love for you to take
@@ -132,7 +132,7 @@ export default function CommunityPage() {
             className="lg:order-8"
             title="Blogs"
             type="warning"
-            url="#"
+            url="mailto:konveyorio@gmail.com"
             icon={<Edit alt="" />}
           >
             Blogs are open for contribution. Is there a topic you are interested
