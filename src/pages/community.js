@@ -111,7 +111,7 @@ export default function CommunityPage() {
           <Callout
             title="Present to the community"
             className="lg:order-4"
-            type="warning"
+            type="light"
             url="mailto:konveyorio@gmail.com"
             icon={<Mic alt="" />}
           >
@@ -121,7 +121,7 @@ export default function CommunityPage() {
           <Callout
             className="lg:order-6"
             title="Konveyor Tool Suite"
-            type="warning"
+            type="light"
             url="https://github.com/konveyor"
             icon={<KonveyorIcon alt="" />}
           >
@@ -131,7 +131,7 @@ export default function CommunityPage() {
           <Callout
             className="lg:order-8"
             title="Blogs"
-            type="warning"
+            type="light"
             url="mailto:konveyorio@gmail.com"
             icon={<Edit alt="" />}
           >

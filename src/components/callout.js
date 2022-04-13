@@ -7,17 +7,13 @@ const Callout = ({ ...props }) => {
     <a
       href={url}
       rel="noopener noreferrer"
-      target={
-        url.indexOf('https://') === 0
-          ? '_blank'
-          : '_self'
-      }
+      target={url.indexOf('https://') === 0 ? '_blank' : '_self'}
       className={` ${className} group flex lg:h-full flex-col space-y-2 min-h-[112px] ring-2 ring-primary-600 ring-inset ring-opacity-10 hover:ring-opacity-50 focus:ring-opacity-100 focus:outline-none focus:ring-outset bg-gradient-to-br ${
-        type === 'tertiary' && 'from-tertiary-200 to-success-200'
+        type === 'dark' && 'from-primary-200 to-secondary-300'
       }
           ${
-            type === 'warning' &&
-            'from-alert-200 to-warning-200 dark:from-primary-200 dark:to-accent-200'
+            type === 'light' &&
+            'from-base-200 to-primary-200 dark:from-primary-200 dark:to-intermediate-200'
           } rounded-lg p-4`}
     >
       <div className="flex space-x-3 items-center">
@@ -38,8 +34,8 @@ Callout.defaultProps = {
   title: 'Title here',
   url: '/',
   icon: ' ',
-  type: 'tertiary',
-  children: 'add a paragraph or two',
+  type: 'dark',
+  children: 'add a sentence or two',
 }
 
 export default Callout
