@@ -1,17 +1,20 @@
 import React from 'react'
 import Seo from '../components/seo'
-import HeroImage from '../components/hero-image'
 import ShareButtons from '../components/sharebuttons'
 import WidowControl from '../components/widow-control'
 import { graphql, StaticQuery } from 'gatsby'
 import PostCard from '../components/postcard'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 export default function Page({ children, ...props }) {
   const {
     frontmatter: { title, description, image },
   } = props.pageContext
   const url = props.location.href
+  const bannerPath = `${props.path}${image}`.slice(1)
+  let banner
 
+  console.log('props =', props)
   return (
     <StaticQuery
       query={graphql`
@@ -40,20 +43,34 @@ export default function Page({ children, ...props }) {
               }
             }
           }
+          allFile {
+            nodes {
+              relativePath
+              childImageSharp {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                  aspectRatio: 2.22
+                  formats: [AUTO, WEBP]
+                )
+              }
+            }
+          }
         }
       `}
       render={(data) => (
         <div className="page-wrapper !max-w-screen-lg">
-          <Seo
-            title={title}
-            description={description}
-            image={image}
-            article={true}
-          />
-          <HeroImage
-            innerClassName="mt-6 rounded-md before:text-transparent before:absolute before:pointer-events-none before:pointer-events-none before:z-[1] before:w-full before:h-full before:shadow-image before:rounded-md relative rounded-md"
-            image={image}
-          />
+          {(banner = data.allFile.nodes.find(
+            (n) => n.relativePath === bannerPath,
+          )?.childImageSharp?.gatsbyImageData) && <></>}
+          <Seo title={title} description={description} image={banner} />
+
+          <div>
+            <GatsbyImage
+              className="mt-6 rounded-md before:text-transparent before:absolute before:pointer-events-none before:pointer-events-none before:z-[1] before:w-full before:h-full before:shadow-image before:rounded-md relative rounded-md"
+              image={banner}
+              alt=""
+            />
+          </div>
           <h1 className="mt-6 font-medium text-3xl md:text-4xl font-headings !leading-snug">
             <WidowControl text={title} />
           </h1>

@@ -1,12 +1,12 @@
 ---
+title: State of Application Modernization Report 2022
 description: >-
   Both anecdotes and past surveys tell us that organizations are modernizing their applications. We wanted to dig deeper into the specifics. To do so, Konveyor community contributor Red Hat sponsored a survey of 600 IT decision makers (ITDM), backend developers, and software architects in the US, UK, and English-speaking Asia-Pacific (APAC).
-title: State of Application Modernization Report 2022
-image: '../images/report-22-banner.jpg'
+image: report-22-banner.jpg
 ---
 
-import MainCol from '../components/main-col'
-import SidebarTOC from '../components/sidebar-toc'
+import MainCol from '../../components/main-col'
+import SidebarTOC from '../../components/sidebar-toc'
 
 <SidebarTOC>
 
@@ -18,11 +18,13 @@ import SidebarTOC from '../components/sidebar-toc'
 
 <MainCol>
 
+by Gordon Haff
+
 Both anecdotes and past surveys tell us that organizations are modernizing their applications. We wanted to dig deeper into the specifics. To do so, Konveyor community contributor Red Hat sponsored a survey of 600 IT decision makers (ITDM), backend developers, and software architects in the US, UK, and English-speaking Asia-Pacific (APAC). We surveyed these respondents, drawn from third-party databases, in October and November of 2021. Their companies had to have an internal app dev team and had to be using or planning to use hybrid cloud or multicloud as well as containers (the overwhelming majority were already using both). Here are some of the things they told us.
 
 ## Modernization is happening quickly
 
-![Companies plan for more than half of their custom applications to be moderniced within the next year.](../images/mod-report-1.png)
+![Companies plan for more than half of their custom applications to be modernized within the next year.](modernization-plan.svg)
 
 We sought out respondents who were modernizing or planning to modernize their custom apps in some manner, so it’s no surprise that everyone we surveyed is modernizing. What’s perhaps less expected is how quickly they’re planning to modernize. Companies are planning to modernize over half of their custom applications during the next year and over a quarter during the next six months. Only 20% expected the modernization to take more than two years.
 
@@ -34,7 +36,7 @@ However, even if you think that a lot of modernization projects are likely to sl
 
 ## There’s no single app modernization strategy
 
-![Companies intend to replatform, refactor, or repurchase just over half of their custom legacy applications. Expectations vary somewhat by region, with those in the UK and APAC planning to rehost or repurchase a greater proportion than those in the US.](../images/mod-report-2.png)
+![Companies intend to replatform, refactor, or repurchase just over half of their custom legacy applications.](replatform-plan.svg)
 
 In considering app modernization strategies, we presented survey respondents with six choices, the widely used six Rs. These are:
 
@@ -45,7 +47,7 @@ In considering app modernization strategies, we presented survey respondents wit
 - **Refactor:** Re-architect as cloud-native, for example, by containerizing workloads or moving them to a serverless architecture
 - **Repurchase:** Move from perpetual licenses to a Software-as-a-Service (SaaS) model
 
-That’s quite the range of options and they’re all being used to significant degrees. Retire and retain were each about half as popular than the four other options—which each captured about 20% of the applications being modernized. The overall story is definitely about matching the application modernization strategy to a given workload and company need rather than there being a single dominant approach across companies.
+That’s quite the range of options and they’re all being used to significant degrees. Retire and retain were each about half as popular than the four other options — which each captured about 20% of the applications being modernized. The overall story is definitely about matching the application modernization strategy to a given workload and company need rather than there being a single dominant approach across companies.
 
 We again see developers being more cautious or pessimistic about more aggressive modernization approaches; they were more likely to intend to rehost relative to ITDMs and architects. We sometimes hear about “resume-driven development,” whereby developers supposedly want to gain experience in new technologies, even if doing so increases complexity. However, the developers in our survey were more likely to favor lower risk and lower effort approaches.
 
@@ -124,7 +126,7 @@ We see something similar crop up with respect to barriers and challenges. The UK
 
 ## Increasing scalability and reliability trump cost reductions
 
-![Companies plan to measure success of application modernization based on increased reliability and increased scalability. Those in APAC will also refer to improved security and customer satisfaction as success metrics.](../images/mod-report-4.png)
+![Companies plan to measure success of application modernization base on increased reliability and increased scalability.](measurement-plan.svg)
 
 How are companies going to measure the success of their application modernizations? Decreased costs are one factor. Costs always matter to at least some degree; ask anyone who has ever owned a budget. But increased reliability (especially in the US) and scalability were at the top of the list overall, with security high up as well.
 
@@ -132,7 +134,7 @@ This was a question that had significant regional differences. Improving securit
 
 ## AI/ML, data caching, and high performance computing on the upswing
 
-![More companies expect to have AI/ML software, data caching tools, and high-performance computing workloads in place in the next two years.](../images/mod-report-5.png)
+![More companies expect to have AI/ML software, data caching tools, and high performance computing workloads in place in the next 2 years.](ai-ml.svg)
 
 While traditional workloads such as web servers, business process applications, and databases are the most common today, they’re not where workload growth is expected to be over the next two years. That would be AI/ML software, data caching (think Redis), and high performance computing, which are expected to grow at least 20% during that period. Analytics falls in between the two groups both in terms of level of usage today and its expected rate of growth.
 
@@ -140,7 +142,7 @@ Thus, many new applications and application architectures are likely to be in em
 
 ## Is there a public cloud backlash?
 
-![Companies expect a shift from public cloud toward private cloud deployment two years from now, especially in the UK and APAC.](../images/mod-report-6.png)
+![Companies expect a shift from public cloud toward private cloud deployment 2 years from now, especially in the UK and APAC.](private-cloud-shift.svg)
 
 The overwhelming majority of the companies we surveyed run at least some of their production applications on a public cloud although a significant number also run on a private cloud—whether on-premise, off-premise, or both.
 
@@ -167,5 +169,9 @@ The above notwithstanding, however, backlash is probably too strong a term. Rath
 ></iframe>
 
 [Automate The Creation/Transformation of Infrastructure as Code Artifacts with Konveyor Move2Kube](https://www.slideshare.net/KonveyorIO/automate-the-creationtransformation-of-infrastructure-as-code-artifacts-with-konveyor-move2kube) from [Konveyor Community](https://www.slideshare.net/KonveyorIO)
+
+---
+
+_Gordon Haff is Technology Advocate at Red Hat where he works on emerging technology strategy; writes about tech, trends, and their business impact; and is a frequent speaker at customer and industry events. Among the topics he works on are edge, blockchain, AI, quantum, cloud-native platforms, and next-generation application architectures. His books include From Pots and Vats to Programs and Apps and How Open Source Ate Software. His current podcast is Innovate @ Open. Prior to Red Hat, as an industry analyst, Gordon wrote hundreds of research notes, was frequently quoted in major publications on a wide range of IT topics, and advised clients on product and marketing strategies._
 
 </MainCol>

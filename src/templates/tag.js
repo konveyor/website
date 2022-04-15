@@ -7,7 +7,6 @@ import PostCard from '../components/postcard'
 const Tag = ({ data, pageContext }) => {
   const posts = data.allMdxByTag.nodes
   const { tag } = pageContext
-  console.log(`mdx("${tag}") =`, posts)
 
   return (
     <div className="max-w-screen-xl page-wrapper">
