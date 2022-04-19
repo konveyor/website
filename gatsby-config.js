@@ -1,7 +1,5 @@
 const prodPlugins = process.env.NODE_ENV === 'production' ? [] : []
-const buildEnv = process.env.GATSBY_BUILD_ENV
-  ? process.env.GATSBY_BUILD_ENV
-  : process.env.NODE_ENV
+const buildEnv = process.env.GATSBY_BUILD_ENV ? process.env.GATSBY_BUILD_ENV : process.env.NODE_ENV
 
 module.exports = {
   flags: {
@@ -79,14 +77,6 @@ module.exports = {
     //`gatsby-plugin-remove-fingerprints`, //Netlify recommends this for performance
     `gatsby-plugin-image`,
     `gatsby-plugin-catch-links`,
-    {
-      resolve: `gatsby-plugin-adobe-launch`,
-      options: {
-        prodScriptUrl: `https://www.redhat.com/ma/dpal.js`,
-        devScriptUrl: `https://www.redhat.com/ma/dpal-staging.js`,
-        includeInDevelopment: true,
-      },
-    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
