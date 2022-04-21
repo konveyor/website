@@ -1,0 +1,29 @@
+<svg enable-background="new 0 0 60 60" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:currentColor;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:1.8728,1.8728;}
+	.st3{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:1.9449,1.9449;}
+	.st4{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:1.891,1.891;}
+	.st5{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:1.9548,1.9548;}
+	.st6{fill:currentColor;}
+	.st7{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:1.0249,1.0249;}
+	.st8{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:1.898,1.898;}
+	.st9{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:2.0374,2.0374;}
+	.st10{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-dasharray:2.0241,2.0241;}</style>
+ <path class="st0" d="m56.9 25.76 0.71-0.71c0.39-0.39 0.39-1.03 0-1.42l-3.85-3.85-2.13 2.14 3.85 3.85c0.39 0.38 1.02 0.38 1.42-0.01z"/>
+ <line class="st0" x1="50.79" x2="52.69" y1="18.94" y2="20.84"/>
+ <path class="st0" d="m41.88 16.9c1.9 1.9 4.97 1.9 6.87 0s1.9-4.97 0-6.87-4.97-1.9-6.87 0c-1.89 1.9-1.89 4.97 0 6.87z"/>
+ <path class="st0" d="m39.84 18.94c3.02 3.02 7.92 3.02 10.95 0 3.02-3.02 3.02-7.92 0-10.95-3.02-3.02-7.92-3.02-10.95 0-3.02 3.03-3.02 7.93 0 10.95z"/>
+ <rect class="st1" x="2.08" y="33.76" width="42.84" height="15.24"/>
+ <line class="st1" x1="44.92" x2="44.92" y1="21.74" y2="22.74"/>
+ <line class="st2" x1="44.92" x2="44.92" y1="24.61" y2="27.42"/>
+ <polyline class="st1" points="44.92 28.36 44.92 29.36 43.92 29.36"/>
+ <line class="st3" x1="41.97" x2="4.05" y1="29.36" y2="29.36"/>
+ <polyline class="st1" points="3.08 29.36 2.08 29.36 2.08 28.36"/>
+ <line class="st4" x1="2.08" x2="2.08" y1="26.47" y2="16.07"/>
+ <polyline class="st1" points="2.08 15.12 2.08 14.12 3.08 14.12"/>
+ <line class="st5" x1="5.03" x2="35.33" y1="14.12" y2="14.12"/>
+ <line class="st1" x1="36.31" x2="37.31" y1="14.12" y2="14.12"/>
+ <circle class="st6" cx="37.58" cy="41.28" r="1.16"/>
+ <line class="st1" x1="8.3" x2="19.35" y1="41.28" y2="41.28"/>
+</svg>

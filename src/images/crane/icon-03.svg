@@ -1,0 +1,19 @@
+<svg enable-background="new 0 0 60 60" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st1{fill:currentColor;stroke:currentColor;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:currentColor;}
+	.st15{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style>
+ <rect class="st15" transform="matrix(4.4934e-11 -1 1 4.4934e-11 -18.634 42.271)" x="5.14" y="23.77" width="13.36" height="13.36"/>
+ <rect class="st15" transform="matrix(4.5002e-11 -1 1 4.5002e-11 -.8925 60.012)" x="22.88" y="23.77" width="13.36" height="13.36"/>
+ <rect class="st1" transform="matrix(4.4866e-11 -1 1 4.4866e-11 16.848 77.753)" x="40.62" y="23.77" width="13.36" height="13.36"/>
+ <path class="st2" d="m37 12.1v-2.26l-1.54-0.22c-0.15-0.67-0.42-1.3-0.78-1.87l0.93-1.24-1.6-1.6-1.24 0.93c-0.57-0.36-1.2-0.62-1.87-0.78l-0.22-1.54h-2.26l-0.22 1.54c-0.67 0.15-1.3 0.42-1.87 0.78l-1.23-0.93-1.6 1.6 0.93 1.24c-0.36 0.57-0.62 1.2-0.78 1.87l-1.54 0.22v2.26l1.54 0.22c0.15 0.67 0.42 1.3 0.78 1.87l-0.93 1.24 1.6 1.6 1.24-0.93c0.57 0.36 1.2 0.62 1.87 0.78l0.22 1.54h2.26l0.22-1.54c0.67-0.15 1.3-0.42 1.87-0.78l1.24 0.93 1.6-1.6-0.93-1.24c0.36-0.57 0.62-1.2 0.78-1.87l1.53-0.22z"/>
+ <path class="st2" d="m32.92 10.97c0 1.86-1.51 3.36-3.36 3.36s-3.36-1.51-3.36-3.36c0-1.86 1.51-3.36 3.36-3.36s3.36 1.5 3.36 3.36z"/>
+ <path class="st3" d="m11.06 20.44c0-4.98 3.84-9.06 8.71-9.44"/>
+ <polygon class="st4" points="17.88 14.23 17.34 13.79 19.52 11.11 16.69 9.13 17.09 8.56 20.54 10.97"/>
+ <path class="st3" d="m39.36 10.97c4.98 0 9.06 3.84 9.44 8.71"/>
+ <polygon class="st4" points="45.57 17.79 46.01 17.24 48.69 19.42 50.67 16.6 51.24 17 48.83 20.44"/>
+ <rect class="st15" transform="matrix(8.9732e-11 1 -1 8.9732e-11 60.013 36.376)" x="5.14" y="41.52" width="13.36" height="13.36"/>
+ <rect class="st15" transform="matrix(8.9527e-11 1 -1 8.9527e-11 77.754 18.635)" x="22.88" y="41.52" width="13.36" height="13.36"/>
+ <rect class="st1" transform="matrix(8.9867e-11 1 -1 8.9867e-11 95.495 .8943)" x="40.62" y="41.52" width="13.36" height="13.36"/>
+</svg>

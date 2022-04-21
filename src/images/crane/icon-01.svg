@@ -1,0 +1,17 @@
+<svg enable-background="new 0 0 60 60" version="1.1" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:none;stroke:currentColor;stroke-miterlimit:10;}
+	.st1{fill:currentColor;stroke:currentColor;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:currentColor;}
+</style>
+ <rect class="st0" transform="matrix(4.487e-11 -1 1 4.487e-11 -23.712 50.694)" x="6.98" y="30.7" width="13.01" height="13.01"/>
+ <rect class="st0" transform="matrix(4.5009e-11 -1 1 4.5009e-11 -6.43 67.976)" x="24.27" y="30.7" width="13.01" height="13.01"/>
+ <rect class="st1" transform="matrix(4.5009e-11 -1 1 4.5009e-11 10.852 85.258)" x="41.55" y="30.7" width="13.01" height="13.01"/>
+ <path class="st2" d="m38.02 19.32v-2.2l-1.5-0.21c-0.15-0.66-0.41-1.27-0.76-1.82l0.91-1.21-1.56-1.56-1.21 0.91c-0.55-0.35-1.17-0.61-1.82-0.76l-0.21-1.5h-2.2l-0.21 1.5c-0.66 0.15-1.27 0.41-1.82 0.76l-1.21-0.91-1.56 1.56 0.91 1.21c-0.35 0.55-0.61 1.17-0.76 1.82l-1.5 0.21v2.2l1.5 0.21c0.15 0.66 0.41 1.27 0.76 1.82l-0.91 1.21 1.56 1.56 1.21-0.91c0.55 0.35 1.17 0.61 1.82 0.76l0.21 1.5h2.2l0.21-1.5c0.66-0.15 1.27-0.41 1.82-0.76l1.21 0.91 1.56-1.56-0.91-1.21c0.35-0.55 0.61-1.17 0.76-1.82l1.5-0.21z"/>
+ <path class="st2" d="m34.05 18.22c0 1.81-1.47 3.28-3.28 3.28s-3.28-1.47-3.28-3.28 1.47-3.28 3.28-3.28c1.81 0.01 3.28 1.47 3.28 3.28z"/>
+ <path class="st3" d="m12.75 27.45c0-4.84 3.73-8.81 8.47-9.2"/>
+ <polygon class="st4" points="19.34 21.49 18.79 21.05 20.96 18.37 18.13 16.4 18.53 15.82 21.98 18.22"/>
+ <path class="st3" d="m40.32 18.22c4.84 0 8.81 3.73 9.2 8.47"/>
+ <polygon class="st4" points="46.28 24.81 46.72 24.26 49.4 26.43 51.37 23.6 51.94 24 49.54 27.45"/>
+</svg>

@@ -4,6 +4,7 @@ import { ReactComponent as Pelorus } from '../../images/pelorus.svg'
 import CommunityLinks from '../../components/community-links'
 import IconBox from '../../components/iconbox'
 import Banner from '../../components/banner.js'
+import { ReactComponent as Icon } from '../../images/pelorus-icon.svg'
 
 export default function PelorusPage() {
   const title = 'Konveyor Pelorus'
@@ -25,9 +26,9 @@ export default function PelorusPage() {
         img={<Pelorus alt="" />}
       >
         <p className={`${pStyle} italic`}>
-          Only compatible with OpenShift at the moment. Work in progress to
-          support upstream Kubernetes compatibility. See why compatibility
-          hasn’t been established yet and what the status is in this{' '}
+          Only compatible with OpenShift at the moment. Work in progress to support upstream
+          Kubernetes compatibility. See why compatibility hasn’t been established yet and what the
+          status is in this{' '}
           <a
             href="https://github.com/konveyor/pelorus/projects/9"
             className={aStyle}
@@ -46,15 +47,11 @@ export default function PelorusPage() {
         <div className="mb-8 md:mb-0 flex flex-col items-center page-wrapper">
           <div className="flex flex-col md:flex-row gap-12">
             <div className="md:order-2 md:w-2/5 flex justify-center">
-              <Pelorus
-                alt=""
-                className="max-w-[10rem] text-primary-800 dark:text-white"
-              />
+              <Icon alt="" className="max-w-[15rem] text-primary-800" />
             </div>
             <div className="md:w-3/5">
               <h3 className={subheadingStyle}>
-                Key metrics Pelorus can focus around Software Delivery
-                Performance are:
+                Key metrics Pelorus can focus around Software Delivery Performance are:
               </h3>
               <ul className="list">
                 <li>Lead time for change</li>

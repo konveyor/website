@@ -4,18 +4,18 @@ import { ReactComponent as Crane } from '../../images/crane.svg'
 import CommunityLinks from '../../components/community-links'
 import IconBox from '../../components/iconbox'
 import Banner from '../../components/banner.js'
-import { Cloud, Move, Server } from 'react-feather'
+import { ReactComponent as Icon1 } from '../../images/crane/icon-01.svg'
+import { ReactComponent as Icon2 } from '../../images/crane/icon-02.svg'
+import { ReactComponent as Icon3 } from '../../images/crane/icon-03.svg'
 
 export default function CranePage() {
   const title = 'Konveyor Crane'
 
-  const headingStyle =
-    'font-headings text-3xl lg:text-5xl text-base-800 text-center mb-2 lg:mb-4'
+  const headingStyle = 'font-headings text-3xl lg:text-5xl text-base-800 text-center mb-2 lg:mb-4'
   const subheadingStyle =
     'font-headings text-xl lg:text-3xl text-base-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
   const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-600 mb-6'
-  const paragraphStyle =
-    'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed'
+  const paragraphStyle = 'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed'
   const aStyle =
     'underline text-primary-700 visited:text-primary-900 focus:ring-2 focus:ring-primary-600 hover:text-warning-700'
   const projectSectStyle =
@@ -36,10 +36,7 @@ export default function CranePage() {
       </Banner>
 
       <section className="z-0 py-12 lg:pt-32 md:pb-40 relative dark:before:opacity-60 dark:after:opacity-60 before:scale-x-[-1] before:z-[-1] before:bg-wave-pattern before:bg-no-repeat before:text-transparent before:w-full after:z-[-1] before:absolute before:h-full before:top-0 before:bg-left-top after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
-        <div
-          className="absolute w-full top-0 left-0 h-full pointer-events-none z-[-1]"
-          aria-hidden
-        >
+        <div className="absolute w-full top-0 left-0 h-full pointer-events-none z-[-1]" aria-hidden>
           <div
             style={{ bottom: '110px', left: '10vw' }}
             className="bg-alert-100 dark:hidden absolute rounded-full h-8 w-8"
@@ -55,39 +52,31 @@ export default function CranePage() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 my-20 md:my-12 gap-8 page-wrapper">
           <div className="text-center">
-            <p className="inline-block h-16 mb-4 rounded-full p-4 bg-primary-200 text-primary-800">
-              <Move alt="" />
+            <p className="inline-block h-24 mb-4 text-primary-800">
+              <Icon2 alt="" />
             </p>
-            <p className={ledeStyle}>
-              Migrate Between different Kubernetes distributions
-            </p>
+            <p className={ledeStyle}>Migrate Between different Kubernetes distributions</p>
             <p className={paragraphStyle}>
-              Crane can help you update your Kubernetes manifest for your latest
-              distribution and version.
+              Crane can help you update your Kubernetes manifest for your latest distribution and
+              version.
             </p>
           </div>
           <div className="text-center">
-            <p className="inline-block h-16 mb-4 rounded-full p-4 bg-alert-200 text-alert-800">
-              <Server alt="" />
+            <p className="inline-block h-24 mb-4 text-primary-800">
+              <Icon1 alt="" />
             </p>
-            <p className={ledeStyle}>
-              Migrate to an automated deployment model
-            </p>
+            <p className={ledeStyle}>Migrate to an automated deployment model</p>
             <p className={paragraphStyle}>
-              Export existing apps to Git, and automate your deployments using
-              continuous delivery
+              Export existing apps to Git, and automate your deployments using continuous delivery
             </p>
           </div>
           <div className="text-center">
-            <p className="inline-block h-16 mb-4 rounded-full p-4 bg-success-200 text-success-800">
-              <Cloud alt="" />
+            <p className="inline-block h-24 mb-4 text-primary-800">
+              <Icon3 alt="" />
             </p>
-            <p className={`md:min-h-[2.8em] lg:min-h-[2.666em] ${ledeStyle}`}>
-              Migrate at scale
-            </p>
+            <p className={`md:min-h-[2.8em] lg:min-h-[2.666em] ${ledeStyle}`}>Migrate at scale</p>
             <p className={paragraphStyle}>
-              Execute large migrations or cluster evacuations in a fully
-              automated manner.
+              Execute large migrations or cluster evacuations in a fully automated manner.
             </p>
           </div>
         </div>
@@ -96,28 +85,22 @@ export default function CranePage() {
       <section className="page-wrapper py-8 md:py-20 flex flex-col items-center">
         <h2 className={headingStyle}>Why Crane</h2>
         <p className={ledeStyle}>
-          Crane is the product of our team distilling several years of
-          experience performing large-scale production Kubernetes migrations.
-          These operations are large, complex, error-prone, and usually must be
-          peformed under a limited window of time. Because of that challenge,
-          its paramount that a migration tool be designed with transparency and
+          Crane is the product of our team distilling several years of experience performing
+          large-scale production Kubernetes migrations. These operations are large, complex,
+          error-prone, and usually must be peformed under a limited window of time. Because of that
+          challenge, its paramount that a migration tool be designed with transparency and
           ease-of-diagnostics in mind.
         </p>
 
         <div className="mt-4 md:mt-8 w-full rounded-2xl border-2 border-base-400 p-4 md:p-8 lg:p-12 grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 bg-tertiary-100 dark:bg-base-100">
           <div>
-            <h3 className={`${subheadingStyle} !mt-0`}>
-              Watch a demo of the tool
-            </h3>
+            <h3 className={`${subheadingStyle} !mt-0`}>Watch a demo of the tool</h3>
             <p className={`${paragraphStyle} max-w-[60ch]`}>
-              This video recording demonstrates how to migrate stateful
-              applications between Kubernetes clusters using Crane CLI.
+              This video recording demonstrates how to migrate stateful applications between
+              Kubernetes clusters using Crane CLI.
             </p>
             <div className="flex flex-wrap gap-3">
-              <IconBox
-                title="Documentation"
-                url="https://crane-docs.konveyor.io/"
-              />
+              <IconBox title="Documentation" url="https://crane-docs.konveyor.io/" />
               <IconBox
                 title="Get Started"
                 url="https://crane-docs.konveyor.io/content/getting-started/installation/"
