@@ -38,9 +38,6 @@ const SignUpForm = () => {
       'gdpr[200369]': gdpr,
       b_180317a04b3c2093d37f905a5_1d63a6eeb5: bot,
     })
-    //const result = { msg: 'testing' }
-    console.log('result =', result)
-    console.log('addToMailchimp(', email, gdpr, bot, ')')
     setMessage(result.msg)
 
     if (result.result === 'success') {
