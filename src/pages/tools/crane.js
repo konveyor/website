@@ -7,14 +7,16 @@ import Banner from '../../components/banner.js'
 import { ReactComponent as Icon1 } from '../../images/crane/icon-01.svg'
 import { ReactComponent as Icon2 } from '../../images/crane/icon-02.svg'
 import { ReactComponent as Icon3 } from '../../images/crane/icon-03.svg'
+import SignUpForm from '../../components/sign-up-form'
 
 export default function CranePage() {
   const title = 'Konveyor Crane'
 
-  const headingStyle = 'font-headings text-3xl lg:text-5xl text-base-800 text-center mb-2 lg:mb-4'
+  const headingStyle =
+    'font-headings text-3xl lg:text-5xl text-primary-800 text-center mb-2 lg:mb-4'
   const subheadingStyle =
-    'font-headings text-xl lg:text-3xl text-base-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
-  const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-600 mb-6'
+    'font-headings text-xl lg:text-3xl text-primary-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
+  const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-700 mb-6'
   const paragraphStyle = 'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed'
   const aStyle =
     'underline text-primary-700 visited:text-primary-900 focus:ring-2 focus:ring-primary-600 hover:text-warning-700'
@@ -122,6 +124,8 @@ export default function CranePage() {
       </section>
 
       <CommunityLinks />
+
+      <SignUpForm />
     </>
   )
 }

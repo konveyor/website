@@ -1,20 +1,9 @@
 import React from 'react'
 
-const IconBox = ({
-  title,
-  url,
-  icon,
-  titleText,
-  flex,
-  className,
-  right,
-  dark = false,
-}) => {
+const IconBox = ({ title, url, icon, titleText, flex, className = '', right, dark = false }) => {
   return (
     <a
-      className={`${
-        flex !== undefined ? 'flex justify-center' : 'inline-flex'
-      } ${
+      className={`${flex !== undefined ? 'flex justify-center' : 'inline-flex'} ${
         dark
           ? 'bg-primary-700 text-primary-100 hover:bg-base-200 hover:text-base-800 focus:bg-base-200 focus:text-base-800'
           : 'bg-primary-100 text-primary-700 hover:bg-base-800 hover:text-base-100 focus:bg-base-800 focus:text-base-100'

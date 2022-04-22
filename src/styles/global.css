@@ -99,11 +99,11 @@ small {
 }
 
 .list {
-  @apply mb-4 list-disc ml-4;
+  @apply ml-8 mb-4 list-disc;
 }
 
 .list li {
-  @apply mb-4 text-left text-lg lg:text-xl text-base-600 lg:leading-relaxed max-w-[50ch] md:max-w-none;
+  @apply mb-2 text-left text-lg lg:text-xl text-base-600 lg:leading-relaxed max-w-[50ch] md:max-w-none;
 }
 
 .get-involved:before,
@@ -393,22 +393,10 @@ code[class*='language-'] {
 .table-container {
   @apply overflow-auto mt-5 md:mt-8 md:mb-4 lg:mb-12;
   max-height: calc(100vh - 112px - 16px);
-  background: linear-gradient(rgba(255, 255, 255, 0), hsl(var(--base-100)) 70%)
-      0 100%,
-    radial-gradient(
-        farthest-side at 50% 100%,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0)
-      )
-      0 100%,
-    linear-gradient(to right, rgba(255, 255, 255, 0), hsl(var(--base-100)) 70%)
-      0 100%,
-    radial-gradient(
-        farthest-side at 100% 50%,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0)
-      )
-      0 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), hsl(var(--base-100)) 70%) 0 100%,
+    radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%,
+    linear-gradient(to right, rgba(255, 255, 255, 0), hsl(var(--base-100)) 70%) 0 100%,
+    radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
   background-repeat: no-repeat;
   background-color: hsl(var(--base-100));
   background-size: 100% 4rem, 100% 2.75rem, 4rem 100%, 2.75rem 100%;

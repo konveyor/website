@@ -15,19 +15,18 @@ import CommunityMembers from '../components/community-members'
 import WidowControl from '../components/widow-control'
 import { ArrowRight, FileText } from 'react-feather'
 import CommunityLinks from '../components/community-links'
+import SignUpForm from '../components/sign-up-form'
 
 export default function IndexPage({ data }) {
   const posts = data.allMdx.nodes
-  const slack = data.site.siteMetadata.socialMedia.filter(
-    (media) => media.platform === 'slack',
-  )[0].url
+  const slack = data.site.siteMetadata.socialMedia.filter((media) => media.platform === 'slack')[0]
+    .url
 
   const headingStyle =
-    'font-headings text-3xl lg:text-5xl text-base-800 text-center mb-2 lg:mb-4'
+    'font-headings text-3xl lg:text-5xl text-primary-800 text-center mb-2 lg:mb-4'
   const subheadingStyle =
-    'font-headings text-xl lg:text-3xl text-base-800 text-center mt-4 mb-2 lg:mt-8 lg:mb-4'
-  const ledeStyle =
-    'max-w-[60ch] text-xl lg:text-2xl text-base-600 mb-6 max-w-[50ch] md:max-w-none'
+    'font-headings text-xl lg:text-3xl text-primary-800 text-center mt-4 mb-2 lg:mt-8 lg:mb-4'
+  const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-700 mb-6 max-w-[50ch] md:max-w-none'
   const paragraphStyle =
     'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed max-w-[50ch] md:max-w-none'
   const aStyle =
@@ -54,9 +53,9 @@ export default function IndexPage({ data }) {
               <WidowControl text="Accelerate Your Application Modernization to Kubernetes" />
             </h1>
             <p className={`${paragraphStyle} text-base-200 my-6 lg:my-8`}>
-              The Konveyor community helps modernize applications by providing
-              open source tools to rehost, replatform, and refactor applications
-              to Kubernetes and cloud-native technologies.
+              The Konveyor community helps modernize applications by providing open source tools to
+              rehost, replatform, and refactor applications to Kubernetes and cloud-native
+              technologies.
             </p>
             <div className="flex flex-wrap gap-3">
               <IconBox title="Get Community Updates" url="#" />
@@ -80,14 +79,11 @@ export default function IndexPage({ data }) {
         <div className="mb-8 md:mb-0 flex flex-col items-center page-wrapper">
           <h2 className={headingStyle}>The Konveyor Tool Suite</h2>
           <p className={`${paragraphStyle} text-center md:max-w-[64ch]`}>
-            Through separate open source migration tools, the{' '}
-            <strong>Konveyor Tool Suite</strong> streamlines the modernization
-            and migration of existing applications to Kubernetes across a range
-            of use cases.
+            Through separate open source migration tools, the <strong>Konveyor Tool Suite</strong>{' '}
+            streamlines the modernization and migration of existing applications to Kubernetes
+            across a range of use cases.
           </p>
-          <p
-            className={`${paragraphStyle} font-bold mt-8 text-center md:max-w-[64ch]`}
-          >
+          <p className={`${paragraphStyle} font-bold mt-8 text-center md:max-w-[64ch]`}>
             Watch how all of these tools work together in this{' '}
             <a
               className={aStyle}
@@ -105,20 +101,14 @@ export default function IndexPage({ data }) {
               <h3 className="sr-only">Konveyor Crane</h3>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Crane
-                    alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
-                  />
+                  <Crane alt="" className="max-w-[10rem] text-primary-800 dark:text-white" />
                 </div>
                 <div className="md:w-3/5">
-                  <p className={ledeStyle}>
-                    Rehost Applications Between Kubernetes Clusters
-                  </p>
+                  <p className={ledeStyle}>Rehost Applications Between Kubernetes Clusters</p>
                   <p className={paragraphStyle}>
-                    With Crane, you can move container-based workloads between
-                    clusters of different Kubernetes distributions at scale
-                    while keeping state, removing environment-specific
-                    configuration, and automating application deployments.
+                    With Crane, you can move container-based workloads between clusters of different
+                    Kubernetes distributions at scale while keeping state, removing
+                    environment-specific configuration, and automating application deployments.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <IconBox
@@ -135,20 +125,14 @@ export default function IndexPage({ data }) {
               <h3 className="sr-only">Konveyor Move2Kube</h3>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:w-2/5 flex justify-center">
-                  <Move2Kube
-                    alt=""
-                    className="max-w-[16rem] text-primary-800 dark:text-white"
-                  />
+                  <Move2Kube alt="" className="max-w-[16rem] text-primary-800 dark:text-white" />
                 </div>
                 <div className="md:w-3/5">
-                  <p className={ledeStyle}>
-                    Replatform Applications to Kubernetes
-                  </p>
+                  <p className={ledeStyle}>Replatform Applications to Kubernetes</p>
                   <p className={paragraphStyle}>
-                    Automate the replatforming of your applications to
-                    Kubernetes with Move2Kube. With this tool, you can translate
-                    your source files to Kubernetes artifacts to quickly get
-                    your workloads running on Kubernetes.
+                    Automate the replatforming of your applications to Kubernetes with Move2Kube.
+                    With this tool, you can translate your source files to Kubernetes artifacts to
+                    quickly get your workloads running on Kubernetes.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <IconBox
@@ -156,10 +140,7 @@ export default function IndexPage({ data }) {
                       url="https://move2kube.konveyor.io/installation"
                       dark="true"
                     />
-                    <IconBox
-                      title="Learn More"
-                      url="https://move2kube.konveyor.io/"
-                    />
+                    <IconBox title="Learn More" url="https://move2kube.konveyor.io/" />
                   </div>
                 </div>
               </div>
@@ -168,20 +149,16 @@ export default function IndexPage({ data }) {
               <h3 className="sr-only">Konveyor Tackle</h3>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Tackle
-                    alt=""
-                    className="max-w-[10rem] text-primary-800 dark:text-white"
-                  />
+                  <Tackle alt="" className="max-w-[10rem] text-primary-800 dark:text-white" />
                 </div>
                 <div className="md:w-3/5">
                   <p className={ledeStyle}>
                     Assess, Prioritize, and Refactor Applications to Kubernetes
                   </p>
                   <p className={paragraphStyle}>
-                    Streamline the modernization of your application portfolio
-                    to Kubernetes. Through interrelated tools, Tackle gives you
-                    insight throughout the adoption process — whether you're
-                    making decisions at the portfolio or application level.
+                    Streamline the modernization of your application portfolio to Kubernetes.
+                    Through interrelated tools, Tackle gives you insight throughout the adoption
+                    process — whether you're making decisions at the portfolio or application level.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <IconBox
@@ -198,20 +175,14 @@ export default function IndexPage({ data }) {
               <h3 className="sr-only">Konveyor Forklift</h3>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:w-2/5 flex justify-center">
-                  <Forklift
-                    alt=""
-                    className="max-w-[12rem] text-primary-800 dark:text-white"
-                  />
+                  <Forklift alt="" className="max-w-[12rem] text-primary-800 dark:text-white" />
                 </div>
                 <div className="md:w-3/5">
-                  <p className={ledeStyle}>
-                    Rehost your Virtual Machines (VMs) to KubeVirt
-                  </p>
+                  <p className={ledeStyle}>Rehost your Virtual Machines (VMs) to KubeVirt</p>
                   <p className={paragraphStyle}>
-                    Migrate virtual machines to Kubernetes at scale with
-                    Forklift. Whether you are rehosting a few or hundreds of VMs
-                    to KubeVirt, Forklift helps you minimize downtime when you
-                    lift and shift these applications.
+                    Migrate virtual machines to Kubernetes at scale with Forklift. Whether you are
+                    rehosting a few or hundreds of VMs to KubeVirt, Forklift helps you minimize
+                    downtime when you lift and shift these applications.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
                     <IconBox
@@ -228,28 +199,22 @@ export default function IndexPage({ data }) {
               <h3 className="sr-only">Konveyor Pelorus</h3>
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Pelorus
-                    alt=""
-                    className="max-w-[12rem] text-primary-800 dark:text-white"
-                  />
+                  <Pelorus alt="" className="max-w-[12rem] text-primary-800 dark:text-white" />
                 </div>
                 <div className="md:w-3/5">
                   <p className={ledeStyle}>
-                    Measure Software Delivery Performance on Kubernetes (
-                    <em>*work in progress</em>)
+                    Measure Software Delivery Performance on Kubernetes (<em>*work in progress</em>)
                   </p>
                   <p className={paragraphStyle}>
-                    Prove the value of modernization. With the Pelorus tool, you
-                    can measure the key metrics to software delivery performance
-                    (lead time for change, deployment frequency, mean time to
-                    restore, and change failure rate) and enable metrics driven
-                    transformation.
+                    Prove the value of modernization. With the Pelorus tool, you can measure the key
+                    metrics to software delivery performance (lead time for change, deployment
+                    frequency, mean time to restore, and change failure rate) and enable metrics
+                    driven transformation.
                   </p>
                   <p className={`${paragraphStyle} italic`}>
-                    *Only compatible with OpenShift at the moment. Work in
-                    progress to support upstream Kubernetes compatibility. See
-                    why compatibility hasn’t been established yet and what the
-                    status is in this{' '}
+                    *Only compatible with OpenShift at the moment. Work in progress to support
+                    upstream Kubernetes compatibility. See why compatibility hasn’t been established
+                    yet and what the status is in this{' '}
                     <a
                       href="https://github.com/konveyor/pelorus/projects/9"
                       className={aStyle}
@@ -347,10 +312,10 @@ export default function IndexPage({ data }) {
               The State of Application Modernization Report 2022
             </h2>
             <p className={`${paragraphStyle} text-base-800`}>
-              Learn why enterprises plan to modernize more than half of their
-              existing applications to run on Kubernetes within the next year.
-              And see how these 600 companies will approach the move, along with
-              other key insights, to inform your modernization strategy.
+              Learn why enterprises plan to modernize more than half of their existing applications
+              to run on Kubernetes within the next year. And see how these 600 companies will
+              approach the move, along with other key insights, to inform your modernization
+              strategy.
             </p>
             <IconBox
               title="Read the report"
@@ -361,6 +326,9 @@ export default function IndexPage({ data }) {
           </div>
         </div>
       </section>
+
+      <SignUpForm />
+
       <section className="relative before:hidden md:before:flex flex-col w-full items-center z-0 before:z-[-1] before:text-transparent before:absolute before:w-full before:h-[100vw] before:top-[-100px] before:bg-gradient-to-b before:from-base-200 before:to-tertiary-400 dark:before:from-base-100 dark:before:to-tertiary-500 before:rounded-full">
         <div className="page-wrapper">
           <h2 className={headingStyle}>Recent posts</h2>
@@ -411,11 +379,7 @@ export const query = graphql`
           title
           image {
             childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                aspectRatio: 2.22
-                formats: [AUTO, WEBP]
-              )
+              gatsbyImageData(layout: CONSTRAINED, aspectRatio: 2.22, formats: [AUTO, WEBP])
             }
           }
         }

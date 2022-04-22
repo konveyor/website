@@ -5,12 +5,13 @@ import CommunityLinks from '../../components/community-links'
 import IconBox from '../../components/iconbox'
 import Banner from '../../components/banner.js'
 import { ReactComponent as Icon } from '../../images/pelorus-icon.svg'
+import SignUpForm from '../../components/sign-up-form'
 
 export default function PelorusPage() {
   const title = 'Konveyor Pelorus'
 
   const subheadingStyle =
-    'font-headings text-xl lg:text-3xl text-base-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
+    'font-headings text-xl lg:text-3xl text-primary-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
   const pStyle = 'mb-4 text-base lg:text-lg text-base-600 lg:leading-relaxed'
   const aStyle =
     'underline text-primary-700 visited:text-primary-900 focus:ring-2 focus:ring-primary-600 hover:text-warning-700'
@@ -43,9 +44,9 @@ export default function PelorusPage() {
         <IconBox title="Get Started" url="#" dark="true" />
       </Banner>
 
-      <section className="z-0 py-12 md:pt-32 md:pb-40 lg:pt-40 relative dark:after:opacity-60 after:z-[-1] after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
+      <section className="z-0 pt-12 pb-32 md:pt-24 md:pb-40 relative dark:after:opacity-60 after:z-[-1] after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
         <div className="mb-8 md:mb-0 flex flex-col items-center page-wrapper">
-          <div className="flex flex-col md:flex-row gap-12">
+          <div className="flex flex-col md:flex-row gap-0 md:gap-12">
             <div className="md:order-2 md:w-2/5 flex justify-center">
               <Icon alt="" className="max-w-[15rem] text-primary-800" />
             </div>
@@ -65,6 +66,8 @@ export default function PelorusPage() {
       </section>
 
       <CommunityLinks />
+
+      <SignUpForm />
     </>
   )
 }

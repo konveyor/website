@@ -59,19 +59,56 @@ module.exports = {
     `gatsby-plugin-layout`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-TKPDMS3',
+
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: 'gatsby' },
+
+        // Specify optional GTM environment details.
+        //gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        //gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        //dataLayerName: "YOUR_DATA_LAYER_NAME",
+
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        routeChangeEventName: 'page_view',
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         resolveEnv: () => buildEnv,
         env: {
           development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+            policy: [{ userAgent: '*', disallow: '/' }],
             sitemap: null,
             host: null,
           },
           production: {
-            policy: [{ userAgent: '*', allow: '/' }],
+            policy: [{ userAgent: '*', allow: '/', disallow: ['/blog/', '/tags/'] }],
           },
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint:
+          'https://gmail.us14.list-manage.com/subscribe/post?u=180317a04b3c2093d37f905a5&amp;id=1d63a6eeb5',
       },
     },
     //`gatsby-plugin-remove-fingerprints`, //Netlify recommends this for performance

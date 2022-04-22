@@ -11,13 +11,15 @@ import { ReactComponent as Icon7 } from '../../images/tackle/icon-07.svg'
 import CommunityLinks from '../../components/community-links'
 import IconBox from '../../components/iconbox'
 import Banner from '../../components/banner.js'
+import SignUpForm from '../../components/sign-up-form'
 
 export default function TacklePage() {
   const title = 'Konveyor Tackle'
 
-  const headingStyle = 'font-headings text-3xl lg:text-5xl text-base-800 text-center mb-2 lg:mb-4'
+  const headingStyle =
+    'font-headings text-3xl lg:text-5xl text-primary-800 text-center mb-2 lg:mb-4'
   const subheadingStyle =
-    'font-headings text-xl lg:text-3xl text-base-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
+    'font-headings text-xl lg:text-3xl text-primary-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
   const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-600 mb-6 max-w-[50ch] md:max-w-none'
   const paragraphStyle =
     'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed max-w-[50ch] md:max-w-none'
@@ -219,6 +221,8 @@ export default function TacklePage() {
       </section>
 
       <CommunityLinks />
+
+      <SignUpForm />
     </>
   )
 }
