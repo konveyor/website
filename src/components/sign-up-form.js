@@ -74,26 +74,28 @@ const SignUpForm = () => {
                 to our email list. You'll only hear from us when we have an update worth sharing.
               </p>
             </div>
-            <p className={fineprintStyle}>
-              You can unsubscribe at any time by clicking the link in the footer of our emails.{' '}
-              <Link className={aStyle} to="/privacy/">
-                Our privacy statement
-              </Link>
-              .
-            </p>
-            <p className={fineprintStyle}>
-              We use Mailchimp as our marketing platform. By clicking below to subscribe, you
-              acknowledge that your information will be transferred to Mailchimp for processing.{' '}
-              <a
-                className={aStyle}
-                href="https://mailchimp.com/legal/terms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn more about Mailchimp's privacy practices
-              </a>
-              .
-            </p>
+            <div className="px-4 lg:px-8">
+              <p className={fineprintStyle}>
+                You can unsubscribe at any time by clicking the link in the footer of our emails.{' '}
+                <Link className={aStyle} to="/privacy/">
+                  Our privacy statement
+                </Link>
+                .
+              </p>
+              <p className={fineprintStyle}>
+                We use Mailchimp as our marketing platform. By clicking below to subscribe, you
+                acknowledge that your information will be transferred to Mailchimp for processing.{' '}
+                <a
+                  className={aStyle}
+                  href="https://mailchimp.com/legal/terms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Learn more about Mailchimp's privacy practices
+                </a>
+                .
+              </p>
+            </div>
           </div>
           <form
             className="md:w-1/2"
