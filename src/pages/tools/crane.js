@@ -33,8 +33,8 @@ export default function CranePage() {
         text="With the open source tool Crane, you can move container-based workloads between clusters of different Kubernetes distributions at scale while keeping state, removing environment-specific configuration, and automating application deployments."
         img={<Crane alt="" />}
       >
-        <IconBox title="Documentation" url="#" />
-        <IconBox title="Get Started" url="#" dark="true" />
+        <IconBox title="Documentation" url="https://crane-docs.konveyor.io/" />
+        <IconBox title="Get Started" url="https://crane-docs.konveyor.io/" dark="true" />
       </Banner>
 
       <section className="z-0 py-12 lg:pt-32 md:pb-40 relative dark:before:opacity-60 dark:after:opacity-60 before:scale-x-[-1] before:z-[-1] before:bg-wave-pattern before:bg-no-repeat before:text-transparent before:w-full after:z-[-1] before:absolute before:h-full before:top-0 before:bg-left-top after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
