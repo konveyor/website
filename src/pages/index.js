@@ -301,7 +301,7 @@ export default function IndexPage({ data }) {
           </div>
         </div>
       </section>
-      <section className="z-1 my-12 md:mt-24 md:mb-40 page-wrapper">
+      <section className="z-1 my-12 md:my-24 page-wrapper">
         <div className="w-full rounded-2xl mt-10 md:mt-16 md:mb-8 lg:mb-24 border-2 border-base-400 bg-primary-200 dark:bg-base-300 p-4 md:p-8 xl:p-16 flex flex-col md:flex-row gap-4 md:gap-8 xl:gap-16">
           <a href="/modernization-report/">
             <ReportCover />
@@ -329,7 +329,7 @@ export default function IndexPage({ data }) {
 
       <SignUpForm />
 
-      <section className="relative overflow-hidden before:hidden md:before:flex flex-col w-full items-center z-0 before:z-[-1] before:text-transparent before:absolute before:w-full before:h-[100vw] before:top-[-100px] before:bg-gradient-to-b before:from-base-200 before:to-tertiary-400 dark:before:from-base-100 dark:before:to-tertiary-500 before:rounded-full">
+      <section className="relative overflow-hidden pt-20 before:hidden md:before:flex flex-col w-full items-center z-0 before:z-[-1] before:text-transparent before:absolute before:w-full before:h-[100vw] before:top-0 before:bg-gradient-to-b before:from-base-200 before:to-tertiary-400 dark:before:from-base-100 dark:before:to-tertiary-500 before:rounded-full">
         <div className="page-wrapper">
           <h2 className={headingStyle}>Recent posts</h2>
           <div className="space-y-6 my-12 md:my-16 md:space-x-6 md:space-y-0 w-full flex flex-col md:flex-row">
