@@ -59,9 +59,11 @@ const SignUpForm = () => {
   return (
     <>
       {subscribed ? (
-        <></>
+        <p id="sign-up" className={`${subheadingStyle} hidden target:block`}>
+          Thank you for subscribing to our updates.
+        </p>
       ) : (
-        <section className="z-1 my-12 md:mt-24 md:mb-40 page-wrapper">
+        <section id="sign-up" className="z-1 my-12 md:mt-24 md:mb-40 page-wrapper">
           <h2 className={headingStyle}>Get Insights On Migrating To Kubernetes</h2>
           <div className="flex flex-col md:flex-row md:gap-12">
             <div className="md:w-1/2">

@@ -58,7 +58,7 @@ export default function IndexPage({ data }) {
               technologies.
             </p>
             <div className="flex flex-wrap gap-3">
-              <IconBox title="Get Community Updates" url="#" />
+              <IconBox title="Get Community Updates" url="#sign-up" />
               <IconBox
                 title="Join our Slack Group"
                 url={slack}
@@ -329,7 +329,7 @@ export default function IndexPage({ data }) {
 
       <SignUpForm />
 
-      <section className="relative before:hidden md:before:flex flex-col w-full items-center z-0 before:z-[-1] before:text-transparent before:absolute before:w-full before:h-[100vw] before:top-[-100px] before:bg-gradient-to-b before:from-base-200 before:to-tertiary-400 dark:before:from-base-100 dark:before:to-tertiary-500 before:rounded-full">
+      <section className="relative overflow-hidden before:hidden md:before:flex flex-col w-full items-center z-0 before:z-[-1] before:text-transparent before:absolute before:w-full before:h-[100vw] before:top-[-100px] before:bg-gradient-to-b before:from-base-200 before:to-tertiary-400 dark:before:from-base-100 dark:before:to-tertiary-500 before:rounded-full">
         <div className="page-wrapper">
           <h2 className={headingStyle}>Recent posts</h2>
           <div className="space-y-6 my-12 md:my-16 md:space-x-6 md:space-y-0 w-full flex flex-col md:flex-row">
