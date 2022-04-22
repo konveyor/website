@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /blog/
+Disallow: /tags/
 Sitemap: https://www.konveyor.io/sitemap/sitemap-index.xml
 Host: https://www.konveyor.io
