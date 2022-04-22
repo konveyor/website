@@ -1,14 +1,5 @@
 import React from 'react'
-import {
-  Facebook,
-  GitHub,
-  Linkedin,
-  Rss,
-  Slack,
-  Twitch,
-  Twitter,
-  Youtube,
-} from 'react-feather'
+import { Facebook, GitHub, Linkedin, Rss, Slack, Twitch, Twitter, Youtube } from 'react-feather'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const SocialMediaIcons = () => {
@@ -64,7 +55,7 @@ const SocialMediaIcons = () => {
 
     return (
       <a
-        className="flex items-center rounded hover:bg-base-900 dark:hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-base-400 dark:focus:ring-primary-700 justify-center"
+        className="flex items-center justify-center rounded hover:bg-base-900 dark:hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-base-400 dark:focus:ring-primary-700"
         target="_blank"
         rel="noopener noreferrer"
         href={url}
@@ -75,7 +66,7 @@ const SocialMediaIcons = () => {
     )
   }
   return (
-    <ul className="flex space-x-4 md:space-x-6 lg:justify-center">
+    <ul className="flex flex-wrap space-x-4 md:space-x-6 lg:justify-center">
       {site.siteMetadata.socialMedia.map((socialSite) => (
         <li key={socialSite.platform}>
           <SocialMediaIcon
