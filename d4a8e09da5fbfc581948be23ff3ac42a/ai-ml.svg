@@ -396,7 +396,7 @@
   </clipPath>
   <g id="surface1754790" clip-path="url(#clip1)">
    <g clip-path="url(#clip2)">
-    <path d="m1619.5 893.39h-1607.1c-6.6016 0-12-5.4024-12-12v-868.77c0-6.6016 5.3984-12 12-12h1607.1c6.6015 0 12 5.3984 12 12v868.77c0 6.5976-5.3985 12-12 12" fill="#2e3382"/>
+    <path d="m1619.5 893.39h-1607.1c-6.6016 0-12-5.4024-12-12v-868.77c0-6.6016 5.3984-12 12-12h1607.1c6.6015 0 12 5.3984 12 12v868.77c0 6.5976-5.3985 12-12 12" fill="#e9eaf2"/>
    </g>
   </g>
   <mask id="mask1">
@@ -529,7 +529,7 @@
   </g>
  </defs>
  <g transform="translate(-144.47 -93.613)">
-  <use transform="translate(144,93)" width="100%" height="100%" mask="url(#mask0)" xlink:href="#surface1754790"/>
+  <use transform="translate(144,93)" width="100%" height="100%" xlink:href="#surface1754790"/>
   <path d="m305.86 739.52h-39.352v-374.09c0-10.82 8.8555-19.676 19.676-19.676s19.676 8.8555 19.676 19.676z" fill="#2e3382"/>
   <use transform="translate(336,356)" width="100%" height="100%" mask="url(#mask1)" xlink:href="#surface1754793"/>
   <path d="m518.88 739.52h-39.348v-367.34c0-10.82 8.8555-19.672 19.676-19.672 10.82 0 19.672 8.8516 19.672 19.672z" fill="#2e3382"/>
