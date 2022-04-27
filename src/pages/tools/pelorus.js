@@ -31,7 +31,7 @@ export default function PelorusPage() {
           Kubernetes compatibility. See why compatibility hasn’t been established yet and what the
           status is in this{' '}
           <a
-            href="https://github.com/konveyor/pelorus/projects/9"
+            href="https://github.com/konveyor/pelorus/issues/328"
             className={aStyle}
             target="_blank"
             rel="noopener noreferrer"
@@ -40,8 +40,8 @@ export default function PelorusPage() {
           </a>
           .
         </p>
-        <IconBox title="Documentation" url="#" />
-        <IconBox title="Get Started" url="#" dark="true" />
+        <IconBox title="Documentation" url="https://pelorus.readthedocs.io/en/latest/" />
+        <IconBox title="Get Started" url="https://pelorus.readthedocs.io/en/latest/Install/" dark="true" />
       </Banner>
 
       <section className="z-0 pt-12 pb-32 md:pt-24 md:pb-40 relative dark:after:opacity-60 after:z-[-1] after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
