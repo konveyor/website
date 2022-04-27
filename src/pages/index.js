@@ -216,7 +216,7 @@ export default function IndexPage({ data }) {
                     upstream Kubernetes compatibility. See why compatibility hasn’t been established
                     yet and what the status is in this{' '}
                     <a
-                      href="https://github.com/konveyor/pelorus/projects/9"
+                      href="https://github.com/konveyor/pelorus/issues/328"
                       className={aStyle}
                       target="_blank"
                       rel="noopener noreferrer"
