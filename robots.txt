@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /blog/
+Disallow: /blog/application-modernization-report/
 Disallow: /tags/
 Sitemap: https://www.konveyor.io/sitemap/sitemap-index.xml
 Host: https://www.konveyor.io
