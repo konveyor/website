@@ -136,8 +136,8 @@ The fields are:
 
 To support light and dark mode, use `currentColor` in the SVG for the main color. This will display as black in light mode:
 
-![Community Supporters section in light mode](img/member-light.png)
+![Community Supporters section in light mode](img/members-light.png)
 
 and as white in dark mode:
 
-![Community Supporters section in dark mode](img/member-dark.png)
+![Community Supporters section in dark mode](img/members-dark.png)
