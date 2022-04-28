@@ -11,7 +11,7 @@ module.exports = {
     description: `Open source community helping others modernize and migrate apps to the hybrid cloud with open source tools. Practitioners also advise how to deconstruct monoliths and adopt containers and Kubernetes via Konveyor Community meetups.`,
     author: `Konveyor Community`,
     siteUrl: `https://www.konveyor.io`,
-    image: `/images/stackrox-community.jpg`,
+    image: `/images/home-social-media.jpg`,
     postsPerPage: 7,
     kubelinter: `https://github.com/stackrox/kube-linter`,
     socialMedia: [
