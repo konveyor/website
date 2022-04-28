@@ -99,7 +99,13 @@ module.exports = {
             host: null,
           },
           production: {
-            policy: [{ userAgent: '*', allow: '/', disallow: ['/blog/', '/tags/'] }],
+            policy: [
+              {
+                userAgent: '*',
+                allow: '/',
+                disallow: ['/blog/application-modernization-report/', '/tags/'],
+              },
+            ],
           },
         },
       },
