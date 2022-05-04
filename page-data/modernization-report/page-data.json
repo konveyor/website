@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-modernization-report-index-mdx",
     "path": "/modernization-report/",
     "result": {"pageContext":{"frontmatter":{"title":"State of Application Modernization Report 2022","description":"Both anecdotes and past surveys tell us that organizations are modernizing their applications. We wanted to dig deeper into the specifics. To do so, Konveyor community contributor Red Hat sponsored a survey of 600 IT decision makers (ITDM), backend developers, and software architects in the US, UK, and English-speaking Asia-Pacific (APAC).","image":"report-22-banner.jpg"}}},
-    "staticQueryHashes": ["1582092386","1953051027","2744294623","3240390238","3649515864","3663114508"]}
+    "staticQueryHashes": ["1953051027","2744294623","3240390238","3649515864","3663114508","3835628385"]}
