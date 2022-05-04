@@ -16,12 +16,7 @@ export default function PostPage({ data, ...props }) {
 
   return (
     <div className="!max-w-screen-lg page-wrapper">
-      <Seo
-        title={title}
-        description={description}
-        image={image}
-        article={true}
-      />
+      <Seo title={title} description={description} image={image} article={true} />
       <div className="flex flex-col md:flex-row md:space-x-4">
         <div className="md:w-3/4 flex-shrink-0 my-6 pb-8 md:pb-16">
           <HeroImage
@@ -30,12 +25,7 @@ export default function PostPage({ data, ...props }) {
           />
           <div className="flex justify-between border-b border-base-300 py-4 text-base-500">
             <p className="font-bold">{date}</p>
-            <ShareButtons
-              title={title}
-              url={url}
-              twitterHandle="konveyor_io"
-              tags={tags}
-            />
+            <ShareButtons title={title} url={url} twitterHandle="konveyor_io" tags={tags} />
           </div>
           <div className="flex flex-col mb-12 space-y-4">
             <h1 className="mt-6 font-medium text-3xl md:text-4xl font-headings !leading-snug">
@@ -73,11 +63,7 @@ export const query = graphql`
         tags
         image {
           childImageSharp {
-            gatsbyImageData(
-              layout: FULL_WIDTH
-              aspectRatio: 2.22
-              formats: [AUTO, WEBP]
-            )
+            gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 2.22, formats: [AUTO, WEBP])
           }
         }
       }

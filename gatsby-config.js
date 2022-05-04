@@ -10,6 +10,7 @@ module.exports = {
     title: `Konveyor Community`,
     description: `Open source community helping others modernize and migrate apps to the hybrid cloud with open source tools. Practitioners also advise how to deconstruct monoliths and adopt containers and Kubernetes via Konveyor Community meetups.`,
     author: `Konveyor Community`,
+    twitterCreator: `konveyor_io`,
     siteUrl: `https://www.konveyor.io`,
     image: `/images/home-social-media.jpg`,
     postsPerPage: 7,
