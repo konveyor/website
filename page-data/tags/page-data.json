@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-tags-index-js",
     "path": "/tags/",
     "result": {"data":{"allMdx":{"group":[{"fieldValue":"HackFest","totalCount":1},{"fieldValue":"Kubernetes","totalCount":1},{"fieldValue":"MTC","totalCount":1},{"fieldValue":"Metrics","totalCount":1},{"fieldValue":"OpenShift","totalCount":1}]}},"pageContext":{}},
-    "staticQueryHashes": ["1953051027","2744294623","3649515864","3663114508","3835628385"]}
+    "staticQueryHashes": ["1953051027","2744294623","287575728","3649515864","3663114508"]}
