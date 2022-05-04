@@ -20,7 +20,6 @@ function Seo({ description, lang, meta, image, title, article }) {
             siteUrl
             image
             description
-            author
           }
         }
       }
@@ -29,56 +28,60 @@ function Seo({ description, lang, meta, image, title, article }) {
 
   const siteUrl = site.siteMetadata.siteUrl
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = getSrc(image) || site.siteMetadata.image
+  const metaImage = getSrc(image) // || site.siteMetadata.image
+  console.log(`title = ${title}`)
+  console.log('metaImage =', metaImage)
   const defaultTitle = site.siteMetadata?.title
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      defaultTitle={defaultTitle}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title ? `${title} | ${defaultTitle}` : defaultTitle,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:image`,
-          content: `${siteUrl}${metaImage}`,
-        },
-        {
-          property: `og:type`,
-          content: article ? `article` : `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title ? `${title} | ${defaultTitle}` : defaultTitle,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    console.log(`og:image = ${siteUrl}${metaImage}`) || (
+      <Helmet
+        htmlAttributes={{
+          lang,
+        }}
+        title={title}
+        titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+        defaultTitle={defaultTitle}
+        meta={[
+          {
+            name: `description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:title`,
+            content: title ? `${title} | ${defaultTitle}` : defaultTitle,
+          },
+          {
+            property: `og:description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:image`,
+            content: `${siteUrl}${metaImage}`,
+          },
+          {
+            property: `og:type`,
+            content: article ? `article` : `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:creator`,
+            content: site.siteMetadata?.author || ``,
+          },
+          {
+            name: `twitter:title`,
+            content: title ? `${title} | ${defaultTitle}` : defaultTitle,
+          },
+          {
+            name: `twitter:description`,
+            content: metaDescription,
+          },
+        ].concat(meta)}
+      />
+    )
   )
 }
 

@@ -14,7 +14,6 @@ export default function Page({ children, ...props }) {
   const bannerPath = `${props.path}${image}`.slice(1)
   let banner
 
-  console.log('props =', props)
   return (
     <StaticQuery
       query={graphql`
@@ -33,11 +32,7 @@ export default function Page({ children, ...props }) {
                 description
                 image {
                   childImageSharp {
-                    gatsbyImageData(
-                      layout: FULL_WIDTH
-                      aspectRatio: 2.22
-                      formats: [AUTO, WEBP]
-                    )
+                    gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 2.22, formats: [AUTO, WEBP])
                   }
                 }
               }
@@ -47,11 +42,7 @@ export default function Page({ children, ...props }) {
             nodes {
               relativePath
               childImageSharp {
-                gatsbyImageData(
-                  layout: FULL_WIDTH
-                  aspectRatio: 2.22
-                  formats: [AUTO, WEBP]
-                )
+                gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 2.22, formats: [AUTO, WEBP])
               }
             }
           }
@@ -59,9 +50,8 @@ export default function Page({ children, ...props }) {
       `}
       render={(data) => (
         <div className="page-wrapper !max-w-screen-lg">
-          {(banner = data.allFile.nodes.find(
-            (n) => n.relativePath === bannerPath,
-          )?.childImageSharp?.gatsbyImageData) && <></>}
+          {(banner = data.allFile.nodes.find((n) => n.relativePath === bannerPath)?.childImageSharp
+            ?.gatsbyImageData) && <></>}
           <Seo title={title} description={description} image={banner} />
 
           <div>
