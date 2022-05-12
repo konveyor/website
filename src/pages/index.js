@@ -16,6 +16,7 @@ import WidowControl from '../components/widow-control'
 import { ArrowRight, FileText } from 'react-feather'
 import CommunityLinks from '../components/community-links'
 import SignUpForm from '../components/sign-up-form'
+import Mailchimp from '../components/mailchimp'
 
 export default function IndexPage({ data }) {
   const posts = data.allMdx.nodes
@@ -46,6 +47,7 @@ export default function IndexPage({ data }) {
   return (
     <div className="overflow-hidden">
       <Seo />
+      <Mailchimp />
       <section className="light overflow-hidden border-b border-base-300 bg-primary-800 relative before:absolute before:bg-hero-waves before:pointer-events-none before:hidden lg:before:flex before:text-transparent before:w-full before:h-full before:bg-left-bottom before:bg-repeat-x">
         <div className="page-wrapper flex flex-col lg:flex-row gap-8 items-center py-8 md:py-16 lg:pt-24 lg:pb-44">
           <div className="max-w-[55ch] lg:w-2/5">
