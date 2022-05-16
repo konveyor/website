@@ -38,10 +38,10 @@ export default function TacklePage() {
         text="Streamline the modernization of your application portfolio to Kubernetes. Through interrelated open source tools, Tackle gives you insight throughout the adoption process — whether you're making decisions at the portfolio or application level."
         img={<Tackle alt="" />}
       >
-        <IconBox title="Documentation" url="https://tackle-docs.konveyor.io/" />
+        <IconBox title="Documentation" url="https://konveyor.github.io/tackle/" />
         <IconBox
           title="Get Started"
-          url="https://tackle-docs.konveyor.io/documentation/doc-installing-and-using-tackle/master/index.html"
+          url="https://konveyor.github.io/tackle/installation/"
           dark="true"
         />
       </Banner>

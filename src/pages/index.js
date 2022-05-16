@@ -115,7 +115,7 @@ export default function IndexPage({ data }) {
                   <div className="mt-8 flex flex-wrap gap-3">
                     <IconBox
                       title="Get Started"
-                      url="https://github.com/konveyor/crane"
+                      url="https://konveyor.github.io/crane/installation/"
                       dark="true"
                     />
                     <IconBox title="Learn More" url="/tools/crane/" />
@@ -165,7 +165,7 @@ export default function IndexPage({ data }) {
                   <div className="mt-8 flex flex-wrap gap-3">
                     <IconBox
                       title="Get Started"
-                      url="https://tackle-docs.konveyor.io/documentation/doc-installing-and-using-tackle/master/index.html"
+                      url="https://konveyor.github.io/tackle/installation/"
                       dark="true"
                     />
                     <IconBox title="Learn More" url="/tools/tackle/" />
