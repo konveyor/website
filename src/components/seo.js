@@ -9,6 +9,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import { getSrc } from 'gatsby-plugin-image'
+import MailChimp from './mailchimp'
 
 function Seo({ description, lang, meta, image, title, article }) {
   const { site } = useStaticQuery(
@@ -82,16 +83,19 @@ function Seo({ description, lang, meta, image, title, article }) {
   }
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      defer={false}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      defaultTitle={defaultTitle}
-      meta={metas}
-    />
+    <>
+      <Helmet
+        htmlAttributes={{
+          lang,
+        }}
+        defer={false}
+        title={title}
+        titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+        defaultTitle={defaultTitle}
+        meta={metas}
+      />
+      <MailChimp />
+    </>
   )
 }
 
