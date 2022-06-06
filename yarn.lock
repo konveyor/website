@@ -4795,7 +4795,7 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.22.3:
+core-js@^3.17.2, core-js@^3.22.3:
   version "3.22.8"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.22.8.tgz#23f860b1fe60797cc4f704d76c93fea8a2f60631"
   integrity sha512-UoGQ/cfzGYIuiq6Z7vWL1HfkE9U9IZ4Ub+0XSiJTCzvbZzgPA69oDF2f+lgJ6dFFLEdjW5O6svvoKzXX23xFkA==
@@ -6650,7 +6650,7 @@ gatsby-cli@^4.15.1:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.15.0, gatsby-core-utils@^3.9.1:
+gatsby-core-utils@^3.15.0, gatsby-core-utils@^3.5.1, gatsby-core-utils@^3.9.1:
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.15.0.tgz#1fb6611765250c187dd6d36c2812a5b0c50204ae"
   integrity sha512-aLNrH3gGUIeD9XGk3z/27N5qaVx7y3AAgs/Vu6PJm69t25kTwuOHKNzhlnHkIZypznZkkVeN7QbHBkIKam/ZIQ==
@@ -6808,10 +6808,10 @@ gatsby-plugin-manifest@^4.5.1:
     semver "^7.3.7"
     sharp "^0.30.3"
 
-gatsby-plugin-mdx@^3.5.1:
-  version "3.15.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.15.2.tgz#16f7de7534d5763bf499f47eee852c25578a06ee"
-  integrity sha512-TsEgeAq40x7IwABXZkZcGStltr6gr3DnGjmhq4QZKapjtsPeTzWKp9HhB93t0OCDD9AfWUCH/teQq0rFTvsaEw==
+gatsby-plugin-mdx@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.5.1.tgz#50ef5b73b00be6205eb16729f0fdbbf487f43c82"
+  integrity sha512-IjgXYC7NC04c5A7nRf0Bc5goKuUnpAQXjbY2dVw6m+CjScQ7lInFEQnhmH1Bw9xOaoiriHpho/LMTUVIrRg2gA==
   dependencies:
     "@babel/core" "^7.15.5"
     "@babel/generator" "^7.15.4"
@@ -6823,13 +6823,13 @@ gatsby-plugin-mdx@^3.5.1:
     "@babel/types" "^7.15.4"
     camelcase-css "^2.0.1"
     change-case "^3.1.0"
-    core-js "^3.22.3"
+    core-js "^3.17.2"
     dataloader "^1.4.0"
     debug "^4.3.1"
     escape-string-regexp "^1.0.5"
     eval "^0.1.4"
-    fs-extra "^10.1.0"
-    gatsby-core-utils "^3.15.0"
+    fs-extra "^10.0.0"
+    gatsby-core-utils "^3.5.1"
     gray-matter "^4.0.2"
     json5 "^2.1.3"
     loader-utils "^1.4.0"
