@@ -8,7 +8,7 @@ import BlogSidebar from '../components/blogsidebar'
 const title = 'Konveyor Blog'
 
 const BlogIndex = ({ data, pageContext }) => {
-  const posts = data.allMdx.nodes
+  const posts = data.latestPosts.nodes
 
   return (
     <div className="max-w-screen-xl page-wrapper">
@@ -36,11 +36,11 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query allMdxQuery($limit: Int!, $skip: Int!) {
-    allMdx(
+    latestPosts: allMdx(
       sort: { order: DESC, fields: frontmatter___date }
       limit: $limit
       skip: $skip
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      filter: { fileAbsolutePath: { regex: "/(/blog/)/" } }
     ) {
       nodes {
         id
@@ -52,11 +52,7 @@ export const pageQuery = graphql`
           description
           image {
             childImageSharp {
-              gatsbyImageData(
-                layout: FULL_WIDTH
-                aspectRatio: 2.22
-                formats: [AUTO, WEBP]
-              )
+              gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 2.22, formats: [AUTO, WEBP])
             }
           }
         }
