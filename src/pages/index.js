@@ -18,7 +18,7 @@ import CommunityLinks from '../components/community-links'
 import SignUpForm from '../components/sign-up-form'
 
 export default function IndexPage({ data }) {
-  const posts = data.allMdx.nodes
+  const posts = data.recentPosts.nodes
   const slack = data.site.siteMetadata.socialMedia.filter((media) => media.platform === 'slack')[0]
     .url
 
@@ -367,8 +367,8 @@ export const query = graphql`
       }
     }
 
-    allMdx(
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
+    recentPosts: allMdx(
+      filter: { fileAbsolutePath: { regex: "/(/blog/)/" } }
       sort: { order: DESC, fields: frontmatter___date }
       limit: 3
     ) {

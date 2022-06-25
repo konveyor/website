@@ -22,7 +22,7 @@ export default function Page({ children, ...props }) {
     <StaticQuery
       query={graphql`
         {
-          allMdx(
+          featured: allMdx(
             sort: { order: DESC, fields: frontmatter___date }
             filter: { frontmatter: { featured: { eq: true } } }
             limit: 6
@@ -85,7 +85,7 @@ export default function Page({ children, ...props }) {
             <WidowControl text="What to read next" />
           </h2>
           <div className="mt-6 mb-8 md:mb-16 grid gird-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {data.allMdx.nodes.map((post) => (
+            {data.featured.nodes.map((post) => (
               <PostCard key={post.id} post={post} condensed="true" />
             ))}
           </div>

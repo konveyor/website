@@ -152,7 +152,7 @@ module.exports = {
             {
               allMdx(
                 sort: { order: DESC, fields: [frontmatter___date] }
-                filter: { fileAbsolutePath: { regex: "/blog/" } }
+                filter: { fileAbsolutePath: { regex: "/(/blog/)/" } }
               ) {
                 edges {
                   node {

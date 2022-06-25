@@ -6,7 +6,7 @@ const FeaturedPosts = () => {
     <StaticQuery
       query={graphql`
         {
-          allMdx(
+          featuredPosts: allMdx(
             sort: { order: DESC, fields: frontmatter___date }
             filter: { frontmatter: { featured: { eq: true } } }
             limit: 7
@@ -23,7 +23,7 @@ const FeaturedPosts = () => {
       `}
       render={(data) => (
         <ul>
-          {data.allMdx.nodes.map((post) => (
+          {data.featuredPosts.nodes.map((post) => (
             <li key={post.id}>
               <Link
                 activeClassName="!from-base-100 !to-secondary-300 !dark:border-base-500 !border-secondary-500 text-secondary-800 dark:text-primary-900 dark:from-base-0 dark:to-primary-400"
