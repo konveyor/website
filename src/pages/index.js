@@ -24,8 +24,6 @@ export default function IndexPage({ data }) {
 
   const headingStyle =
     'font-headings text-3xl lg:text-5xl text-primary-800 text-center mb-2 lg:mb-4'
-  const subheadingStyle =
-    'font-headings text-xl lg:text-3xl text-primary-800 text-center mt-4 mb-2 lg:mt-8 lg:mb-4'
   const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-700 mb-6 max-w-[50ch] md:max-w-none'
   const paragraphStyle =
     'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed max-w-[50ch] md:max-w-none'
@@ -187,7 +185,7 @@ export default function IndexPage({ data }) {
                   <div className="mt-8 flex flex-wrap gap-3">
                     <IconBox
                       title="Get Started"
-                      url="https://github.com/konveyor/forklift-documentation/"
+                      url="https://konveyor.github.io/forklift/installingforklift/installation/"
                       dark="true"
                     />
                     <IconBox title="Learn More" url="/tools/forklift/" />

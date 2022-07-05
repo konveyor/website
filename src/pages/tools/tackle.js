@@ -23,8 +23,6 @@ export default function TacklePage() {
   const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-600 mb-6 max-w-[50ch] md:max-w-none'
   const paragraphStyle =
     'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed max-w-[50ch] md:max-w-none'
-  const aStyle =
-    'underline text-primary-700 visited:text-primary-900 focus:ring-2 focus:ring-primary-600 hover:text-warning-700'
   const projectSectStyle =
     'my-12 lg:mx-12 xl:mx-20 border-b-2 border-primary-200 pb-12 last:border-0 text-center md:text-left'
 

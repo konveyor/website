@@ -18,10 +18,6 @@ export default function CranePage() {
     'font-headings text-xl lg:text-3xl text-primary-800 mt-4 mb-2 lg:mt-8 lg:mb-4'
   const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-700 mb-6'
   const paragraphStyle = 'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed'
-  const aStyle =
-    'underline text-primary-700 visited:text-primary-900 focus:ring-2 focus:ring-primary-600 hover:text-warning-700'
-  const projectSectStyle =
-    'my-12 lg:mx-12 xl:mx-20 border-b-2 border-primary-200 pb-12 last:border-0 text-center md:text-left'
 
   return (
     <>
