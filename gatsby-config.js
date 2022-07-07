@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         platform: `slack`,
-        url: `https://kubernetes.slack.com/archives/CR85S82A2`,
+        url: `/slack/`,
         title: `Join us on Slack`,
       },
       {

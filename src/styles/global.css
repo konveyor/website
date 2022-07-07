@@ -464,3 +464,15 @@ code[class*='language-'] {
 .gatsby-resp-image-wrapper {
   @apply my-16;
 }
+
+.ordered {
+  @apply mb-4 list-decimal;
+}
+
+.ordered > li {
+  @apply max-w-[60ch] text-lg lg:text-xl text-base-600 ml-10 mb-4;
+}
+
+.ordered > li::marker {
+  @apply text-3xl text-alert-500 font-bold;
+}
