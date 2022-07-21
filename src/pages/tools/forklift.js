@@ -27,7 +27,7 @@ export default function ForkliftPage() {
         text="Migrate virtual machines to Kubernetes at scale with the open source tool Forklift. Whether you are rehosting a few or hundreds of VMs to KubeVirt, Forklift helps you minimize downtime when you lift and shift these applications."
         img={<Forklift alt="" />}
       >
-        <IconBox title="Documentation" url="https://konveyor.github.io/forklift/overview/" />
+        <IconBox title="Documentation" url="https://konveyor.github.io/forklift/" />
         <IconBox
           title="Get Started"
           url="https://konveyor.github.io/forklift/installingforklift/installation/"
@@ -91,7 +91,7 @@ export default function ForkliftPage() {
         </p>
 
         <div className="flex flex-wrap gap-3">
-          <IconBox title="Documentation" url="https://konveyor.github.io/forklift/overview/" />
+          <IconBox title="Documentation" url="https://konveyor.github.io/forklift/" />
           <IconBox
             title="Get Started"
             url="https://konveyor.github.io/forklift/installingforklift/installation/"
