@@ -21,8 +21,7 @@ const HelloBar = () => (
       }
     `}
     render={({ helloBarYaml }) => {
-      const { background_color, end_date, link_text, link_url, title } =
-        helloBarYaml
+      const { background_color, end_date, link_text, link_url, title } = helloBarYaml
 
       return (
         <>
@@ -36,7 +35,7 @@ const HelloBar = () => (
                 <WidowControl text={title} />
               </span>
               <IconBox
-                className="hidden md:block !px-2 !py-1 !font-normal"
+                className="hidden md:block !px-2 !py-1 !font-normal text-center"
                 title={link_text}
                 url={link_url}
               />
