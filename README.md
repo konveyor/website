@@ -141,3 +141,7 @@ To support light and dark mode, use `currentColor` in the SVG for the main color
 and as white in dark mode:
 
 ![Community Supporters section in dark mode](img/members-dark.png)
+
+
+## Code of Conduct
+Refer to Konveyor's Code of Conduct [here](https://github.com/konveyor/community/blob/main/CODE_OF_CONDUCT.md).
