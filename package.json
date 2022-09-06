@@ -9,7 +9,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "TZ='America/Los_Angeles' gatsby build",
     "dev": "TAILWIND_MODE=watch gatsby develop --host=0.0.0.0",
