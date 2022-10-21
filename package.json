@@ -81,7 +81,7 @@
     "tailwindcss-multi-column": "^1.0.2"
   },
   "devDependencies": {
-    "editorconfig": "^0.15.3",
+    "editorconfig": "^1.0.0",
     "prettier": "^2.5.1"
   }
 }
