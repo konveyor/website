@@ -8,7 +8,8 @@ This is the repository for [www.konveyor.io](https://www.konveyor.io/). The site
 
 Your system needs to have the following installed to be able to build this website:
 
-- [Node.js](https://nodejs.org/)
+- [Node.js](https://nodejs.org/) (version 16, it won't work with version 18 yet)
+
 - [git](https://git-scm.com/)
 - [yarn](https://www.npmjs.com/package/yarn)
 - [gatsby-cli](https://www.npmjs.com/package/gatsby-cli)
