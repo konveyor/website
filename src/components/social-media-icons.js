@@ -1,5 +1,6 @@
 import React from 'react'
 import { Facebook, GitHub, Linkedin, Rss, Slack, Twitch, Twitter, Youtube } from 'react-feather'
+import { ReactComponent as Mastodon } from '../images/mastodon.svg'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const SocialMediaIcons = () => {
@@ -32,6 +33,9 @@ const SocialMediaIcons = () => {
 
         case 'linkedin':
           return <Linkedin alt="LinkedIn" className={iconClass} />
+
+        case 'mastodon':
+          return <Mastodon alt="Mastodon" className={iconClass} />
 
         case 'rss':
           return <Rss alt="RSS" className={iconClass} />
