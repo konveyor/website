@@ -60,7 +60,7 @@ const SocialMediaIcons = () => {
     return (
       <a
         className="flex items-center justify-center rounded hover:bg-base-900 dark:hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-base-400 dark:focus:ring-primary-700"
-        target="_blank"
+        target={url.indexOf('https://') === 0 ? '_blank' : '_self'}
         rel="noopener noreferrer"
         href={url}
         title={title}
