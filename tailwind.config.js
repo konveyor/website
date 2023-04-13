@@ -131,6 +131,17 @@ module.exports = {
         800: varToHsla('--alert-800'),
         900: varToHsla('--alert-900'),
       },
+      orange: {
+        100: varToHsla('--orange-100'),
+        200: varToHsla('--orange-200'),
+        300: varToHsla('--orange-300'),
+        400: varToHsla('--orange-400'),
+        500: varToHsla('--orange-500'),
+        600: varToHsla('--orange-600'),
+        700: varToHsla('--orange-700'),
+        800: varToHsla('--orange-800'),
+        900: varToHsla('--orange-900'),
+      },
     },
 
     fontFamily: {
