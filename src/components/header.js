@@ -22,8 +22,8 @@ export const Header = ({ siteTitle }) => {
       title: 'Community',
     },
     {
-      path: '/tools/',
-      title: 'Tools',
+      path: '/ecosystem/',
+      title: 'Ecosystem',
     },
     {
       path: '/blog/',
@@ -81,12 +81,7 @@ export const Header = ({ siteTitle }) => {
                     </Menu.Item>
                   ))}
                 </Dropdown>
-                <Dropdown
-                  state={Open}
-                  overflow
-                  search
-                  onClick={onDropDownClick}
-                >
+                <Dropdown state={Open} overflow search onClick={onDropDownClick}>
                   <SearchBar state={Open} onClick={onDropDownClick} />
                 </Dropdown>
               </div>

@@ -1,21 +1,19 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 import Seo from '../components/seo'
-import HeroImage from '../components/hero-image'
-import { StaticImage } from 'gatsby-plugin-image'
 import { ReactComponent as Slack } from '../images/slack-icon.svg'
-import { ReactComponent as HomeBanner } from '../images/homepage-diagram.svg'
-import { ReactComponent as Crane } from '../images/crane.svg'
-import { ReactComponent as Move2Kube } from '../images/move2kube.svg'
-import { ReactComponent as Tackle } from '../images/tackle.svg'
-import { ReactComponent as Forklift } from '../images/forklift.svg'
-import { ReactComponent as Pelorus } from '../images/pelorus.svg'
+import { ReactComponent as HomeBanner } from '../images/konveyorhome.svg'
+import { ReactComponent as Konveyor } from '../images/Konveyor-logo-color.svg'
+import { ReactComponent as KonveyorWh } from '../images/Konveyor-logo-color-wh.svg'
+import { ReactComponent as CNative } from '../images/cncf-white.svg'
 import IconBox from '../components/iconbox'
-import CommunityMembers from '../components/community-members'
 import WidowControl from '../components/widow-control'
-import { ArrowRight, FileText } from 'react-feather'
 import CommunityLinks from '../components/community-links'
 import SignUpForm from '../components/sign-up-form'
+import CommunitySupporters from '../components/community-supporters'
+import ModernizationReport from '../components/modernization-report-section'
+import RecentPosts from '../components/recent-posts'
+import Bubbles from '../components/bubbles'
 
 export default function IndexPage({ data }) {
   const posts = data.recentPosts.nodes
@@ -24,7 +22,8 @@ export default function IndexPage({ data }) {
 
   const headingStyle =
     'font-headings text-3xl lg:text-5xl text-primary-800 text-center mb-2 lg:mb-4'
-  const ledeStyle = 'max-w-[60ch] text-xl lg:text-2xl text-base-700 mb-6 max-w-[50ch] md:max-w-none'
+  const ledeStyle =
+    'max-w-[60ch] font-bold text-xl lg:text-2xl text-bold mb-6 max-w-[50ch] md:max-w-none'
   const paragraphStyle =
     'mb-4 text-lg lg:text-xl text-base-600 lg:leading-relaxed max-w-[50ch] md:max-w-none'
   const aStyle =
@@ -32,14 +31,22 @@ export default function IndexPage({ data }) {
   const projectSectStyle =
     'my-12 lg:mx-12 xl:mx-20 border-b-2 border-primary-200 pb-12 last:border-0 text-center md:text-left'
 
-  const ReportCover = () => (
-    <StaticImage
-      src="../images/report-2022-cover.png"
-      alt="State of Application Modernization with the Konveyor Community cover"
-      className="rounded-lg w-40 md:w-auto self-center md:self-start"
-      width="1028"
-    />
-  )
+  const features = [
+    `Konveyor Hub: Central interface from where you manage your application
+    portfolio and integrate with other Tackle tools.`,
+    `Categorize and group applications by different dimensions
+    (pre-packaged or custom) aligned with technical criteria or your
+    organization structure.`,
+    'Assess applications containerization suitablity and risks assessment.',
+    `Assign priority, assess estimated migration effort, and define optimal
+    migration strategy for individual applications.`,
+    `Evaluate required changes for Java applications containerization
+    through automated analysis (pre-packaged or custom rules).`,
+    `Fully integrated Konveyor Data Intensive Validity Advisor (DiVA): Analyzes
+    the data layer of applications and detect dependencies to different data
+    stores and distributed transactions. Import target Java application
+    source files to generate analysis results.`,
+  ]
 
   return (
     <div className="overflow-hidden">
@@ -72,284 +79,81 @@ export default function IndexPage({ data }) {
             />
           </div>
         </div>
+
+        {/* Footer */}
+        <div className="flex flex-col md:flex-row justify-center items-center text-center space-x-4 my-2 md:max-h-[3em]">
+          <div className="flex flex-col justify-center items-center">
+            <h3 className="font-headings text-xl break-keep md:text-2xl text-center text-base-100">
+              Konveyor is a
+            </h3>
+          </div>
+          <div className="flex-none justify-center items-center w-2/5 py-2 md:w-1/5 lg:w-1/6 md:max-h-[5em]">
+            <CNative />
+          </div>
+          <div className="flex flex-col justify-center items-center text-center">
+            <h3 className="font-headings text-2xl md:text-2xl text-base-100">Sandbox project</h3>
+          </div>
+        </div>
       </section>
-      <section className="z-0 py-12 md:pt-32 md:pb-40 lg:pt-40 relative dark:after:opacity-60 after:z-[-1] after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
+
+      <section className="z-0 py-8 md:pb-40 lg:pt-40 relative dark:after:opacity-60 after:z-[-1] after:text-transparent after:bg-wave-pattern after:rotate-180 after:bg-no-repeat after:w-full after:z-[-1] after:absolute after:h-full after:top-0 after:bg-left-top after:scale-x-[-1]">
         <div className="mb-8 md:mb-0 flex flex-col items-center page-wrapper">
-          <h2 className={headingStyle}>The Konveyor Tool Suite</h2>
-          <p className={`${paragraphStyle} text-center md:max-w-[64ch]`}>
-            Through separate open source migration tools, the <strong>Konveyor Tool Suite</strong>{' '}
-            streamlines the modernization and migration of existing applications to Kubernetes
-            across a range of use cases.
-          </p>
-          <p className={`${paragraphStyle} font-bold mt-8 text-center md:max-w-[64ch]`}>
-            Watch how all of these tools work together in this{' '}
-            <a
-              className={aStyle}
-              href="https://youtu.be/aKDFFDXPHYk"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              application modernization&nbsp;demo
-            </a>
-            .
-          </p>
+          <h2 className={headingStyle}>The Konveyor Tool Kit</h2>
 
           <div className="mt-4 md:mt-8">
             <div className={projectSectStyle}>
-              <h3 className="sr-only">Konveyor Crane</h3>
+              <h3 className="sr-only">
+                Assess, Prioritize, and Refactor Applications to Kubernetes
+              </h3>
               <div className="flex flex-col md:flex-row gap-12">
-                <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Crane alt="" className="max-w-[10rem] text-primary-800 dark:text-white" />
-                </div>
-                <div className="md:w-3/5">
-                  <p className={ledeStyle}>Rehost Applications Between Kubernetes Clusters</p>
-                  <p className={paragraphStyle}>
-                    With Crane, you can move container-based workloads between clusters of different
-                    Kubernetes distributions at scale while keeping state, removing
-                    environment-specific configuration, and automating application deployments.
-                  </p>
-                  <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox
-                      title="Get Started"
-                      url="https://konveyor.github.io/crane/installation/"
-                      dark="true"
-                    />
-                    <IconBox title="Learn More" url="/tools/crane/" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={projectSectStyle}>
-              <h3 className="sr-only">Konveyor Move2Kube</h3>
-              <div className="flex flex-col md:flex-row gap-12">
-                <div className="md:w-2/5 flex justify-center">
-                  <Move2Kube alt="" className="max-w-[16rem] text-primary-800 dark:text-white" />
-                </div>
-                <div className="md:w-3/5">
-                  <p className={ledeStyle}>Replatform Applications to Kubernetes</p>
-                  <p className={paragraphStyle}>
-                    Automate the replatforming of your applications to Kubernetes with Move2Kube.
-                    With this tool, you can translate your source files to Kubernetes artifacts to
-                    quickly get your workloads running on Kubernetes.
-                  </p>
-                  <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox
-                      title="Get Started"
-                      url="https://move2kube.konveyor.io/installation"
-                      dark="true"
-                    />
-                    <IconBox title="Learn More" url="https://move2kube.konveyor.io/" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={projectSectStyle}>
-              <h3 className="sr-only">Konveyor Tackle</h3>
-              <div className="flex flex-col md:flex-row gap-12">
-                <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Tackle alt="" className="max-w-[10rem] text-primary-800 dark:text-white" />
+                <div className="md:order-2 md:w-2/5">
+                  <Konveyor alt="" className="text-primary-800 dark:hidden" />
+                  <KonveyorWh className="hidden dark:block" />
                 </div>
                 <div className="md:w-3/5">
                   <p className={ledeStyle}>
                     Assess, Prioritize, and Refactor Applications to Kubernetes
                   </p>
                   <p className={paragraphStyle}>
-                    Streamline the modernization of your application portfolio to Kubernetes.
-                    Through interrelated tools, Tackle gives you insight throughout the adoption
-                    process — whether you're making decisions at the portfolio or application level.
+                    Streamline the modernization of your application portfolio to Kubernetes. The
+                    Konveyor tool gives you insight throughout the migration process - whether
+                    you're making decisions at the portfolio or application level.
                   </p>
-                  <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox
-                      title="Get Started"
-                      url="https://konveyor.github.io/tackle/installation/"
-                      dark="true"
-                    />
-                    <IconBox title="Learn More" url="/tools/tackle/" />
-                  </div>
                 </div>
               </div>
-            </div>
-            <div className={projectSectStyle}>
-              <h3 className="sr-only">Konveyor Forklift</h3>
-              <div className="flex flex-col md:flex-row gap-12">
-                <div className="md:w-2/5 flex justify-center">
-                  <Forklift alt="" className="max-w-[12rem] text-primary-800 dark:text-white" />
-                </div>
-                <div className="md:w-3/5">
-                  <p className={ledeStyle}>Rehost your Virtual Machines (VMs) to KubeVirt</p>
-                  <p className={paragraphStyle}>
-                    Migrate virtual machines to Kubernetes at scale with Forklift. Whether you are
-                    rehosting a few or hundreds of VMs to KubeVirt, Forklift helps you minimize
-                    downtime when you lift and shift these applications.
-                  </p>
-                  <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox
-                      title="Get Started"
-                      url="https://konveyor.github.io/forklift/installingforklift/installation/"
-                      dark="true"
-                    />
-                    <IconBox title="Learn More" url="/tools/forklift/" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={projectSectStyle}>
-              <h3 className="sr-only">Konveyor Pelorus</h3>
-              <div className="flex flex-col md:flex-row gap-12">
-                <div className="md:order-2 md:w-2/5 flex justify-center">
-                  <Pelorus alt="" className="max-w-[12rem] text-primary-800 dark:text-white" />
-                </div>
-                <div className="md:w-3/5">
-                  <p className={ledeStyle}>
-                    Measure Software Delivery Performance on Kubernetes (<em>*work in progress</em>)
-                  </p>
-                  <p className={paragraphStyle}>
-                    Prove the value of modernization. With the Pelorus tool, you can measure the key
-                    metrics to software delivery performance (lead time for change, deployment
-                    frequency, mean time to restore, and change failure rate) and enable metrics
-                    driven transformation.
-                  </p>
-                  <p className={`${paragraphStyle} italic`}>
-                    *Only compatible with OpenShift at the moment. Work in progress to support
-                    upstream Kubernetes compatibility. See why compatibility hasn’t been established
-                    yet and what the status is in this{' '}
-                    <a
-                      href="https://github.com/konveyor/pelorus/issues/328"
-                      className={aStyle}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      GitHub issue
-                    </a>
-                    .
-                  </p>
-                  <div className="mt-8 flex flex-wrap gap-3">
-                    <IconBox
-                      title="Get Started"
-                      url="https://pelorus.readthedocs.io/en/latest/"
-                      dark="true"
-                    />
-                    <IconBox title="Learn More" url="/tools/pelorus/" />
-                  </div>
+              <div className="pt-12">
+                <h4 className="font-bold text-xl text-primary-800 mb-8">Feature set</h4>
+                <ul className="list mb-4 md:w-1/2">
+                  {features.map((feature, index) => (
+                    <li key={index} className={[paragraphStyle, 'py-8']}>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <IconBox
+                    title="Get Started"
+                    url="https://konveyor.github.io/tackle/installation/"
+                    dark="true"
+                  />
+                  <IconBox title="Github Repo" url="https://konveyor.github.io/tackle/" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          className="absolute w-full hidden md:flex top-0 left-0 h-full pointer-events-none z-[-1]"
-          aria-hidden
-        >
-          <div
-            style={{ top: '180px', left: '15vw' }}
-            className="bg-tertiary-100 dark:hidden absolute rounded-full h-10 w-10"
-          />
-
-          <div
-            style={{ top: '32px', right: '15vw' }}
-            className="bg-caution-100 dark:hidden absolute rounded-full h-12 w-12"
-          />
-
-          <div
-            style={{ bottom: '50px', right: '8vw' }}
-            className="bg-warning-100 dark:hidden absolute rounded-full h-12 w-12"
-          />
-
-          <div
-            style={{ bottom: '140px', left: '10vw' }}
-            className="bg-alert-100 dark:hidden absolute rounded-full h-10 w-10"
-          />
-          <div
-            style={{ bottom: '100px', left: '55%' }}
-            className="bg-primary-100 dark:hidden absolute rounded-full h-14 w-14"
-          />
-        </div>
+        <Bubbles />
       </section>
 
       <CommunityLinks />
 
-      <section className="z-0 py-12 md:pt-24 relative dark:before:opacity-60 before:scale-x-[-1] before:z-[-1] before:bg-wave-pattern before:bg-no-repeat before:text-transparent before:w-full before:absolute before:h-full before:top-0 before:bg-left-top">
-        <div className="flex flex-col items-center page-wrapper">
-          <h3 className={headingStyle}>Community Supporters</h3>
-          <CommunityMembers />
-          <IconBox
-            title="Reach out to become a community supporter"
-            url="mailto:konveyorio@gmail.com"
-            icon={<ArrowRight alt="" />}
-            right="true"
-          />
-          <div
-            className="absolute w-full hidden md:flex top-0 left-0 h-full pointer-events-none z-[-1]"
-            aria-hidden
-          >
-            <div
-              style={{ top: '80px', left: '20vw' }}
-              className="bg-tertiary-100 dark:hidden absolute rounded-full h-10 w-10"
-            />
+      <CommunitySupporters />
 
-            <div
-              style={{ bottom: '120px', right: '17vw' }}
-              className="bg-caution-100 dark:hidden absolute rounded-full h-12 w-12"
-            />
-
-            <div
-              style={{ bottom: '-40px', left: '10vw' }}
-              className="bg-success-100 dark:hidden absolute rounded-full h-14 w-14"
-            />
-          </div>
-        </div>
-      </section>
-      <section className="z-1 my-12 md:my-24 page-wrapper">
-        <div className="w-full rounded-2xl mt-10 md:mt-16 md:mb-8 lg:mb-24 border-2 border-base-400 bg-primary-200 dark:bg-base-300 p-4 md:p-8 xl:p-16 flex flex-col md:flex-row gap-4 md:gap-8 xl:gap-16">
-          <a href="/modernization-report/">
-            <ReportCover />
-            <p className="sr-only">Read the report</p>
-          </a>
-          <div>
-            <h2 className={`${headingStyle} !text-left text-primary-800`}>
-              The State of Application Modernization Report 2022
-            </h2>
-            <p className={`${paragraphStyle} text-base-800`}>
-              Learn why enterprises plan to modernize more than half of their existing applications
-              to run on Kubernetes within the next year. And see how these 600 companies will
-              approach the move, along with other key insights, to inform your modernization
-              strategy.
-            </p>
-            <IconBox
-              title="Read the report"
-              icon={<FileText alt="" />}
-              url="/modernization-report/"
-              className="text-center mt-4"
-            />
-          </div>
-        </div>
-      </section>
+      <ModernizationReport headingStyle={headingStyle} paragraphStyle={paragraphStyle} />
 
       <SignUpForm />
 
-      <section className="relative overflow-hidden pt-20 before:hidden md:before:flex flex-col w-full items-center z-0 before:z-[-1] before:text-transparent before:absolute before:w-full before:h-[100vw] before:top-0 before:bg-gradient-to-b before:from-base-200 before:to-tertiary-400 dark:before:from-base-100 dark:before:to-tertiary-500 before:rounded-full">
-        <div className="page-wrapper">
-          <h2 className={headingStyle}>Recent posts</h2>
-          <div className="space-y-6 my-12 md:my-16 md:space-x-6 md:space-y-0 w-full flex flex-col md:flex-row">
-            {posts.map((post) => (
-              <Link
-                to={`/blog/${post.slug}`}
-                key={post.frontmatter.title}
-                className="md:w-1/3 bg-base-100 group rounded-lg border-2 border-base-500 hover:ring-2 hover:ring-primary-500 focus:ring-2 focus:ring-base-500"
-              >
-                <HeroImage
-                  className="p-3"
-                  innerClassName="rounded-md before:text-transparent before:absolute before:rounded-md before:pointer-events-none before:pointer-events-none before:z-[1] before:w-full before:h-full before:shadow-image relative"
-                  image={post.frontmatter.image}
-                />
-                <p className="border-t-2 border-base-400 p-3 text-sm lg:text-base font-medium group-hover:text-primary-700">
-                  <span className="line-clamp-3">{post.frontmatter.title}</span>
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <RecentPosts headingStyle={headingStyle} posts={posts} />
     </div>
   )
 }
@@ -364,7 +168,6 @@ export const query = graphql`
         }
       }
     }
-
     recentPosts: allMdx(
       filter: { fileAbsolutePath: { regex: "/(/blog/)/" } }
       sort: { order: DESC, fields: frontmatter___date }
