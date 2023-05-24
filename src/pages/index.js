@@ -133,10 +133,10 @@ export default function IndexPage({ data }) {
                 <div className="mt-8 flex flex-wrap gap-3">
                   <IconBox
                     title="Get Started"
-                    url="https://konveyor.github.io/tackle/installation/"
+                    url="https://konveyor.github.io/konveyor/installation/"
                     dark="true"
                   />
-                  <IconBox title="Github Repo" url="https://konveyor.github.io/tackle/" />
+                  <IconBox title="Github Repo" url="https://github.com/konveyor/tackle2-operator" />
                 </div>
               </div>
             </div>
