@@ -1,6 +1,6 @@
 ---
 author: savitharaghunathan
-date: 2023-07-10
+date: 2023-07-11
 description: >-
   Konveyor aims to surface insights on applications at scale to empower enterprise users to make better-informed decisions related to modernization activities. This tutorial focuses on addressing edge case issues with Hazelcast during Kubernetes migration, emphasizing the benefits of creating custom rules and sharing knowledge to streamline future modernization efforts.
 featured: true
@@ -101,7 +101,7 @@ Here's the high-level view of the deployment,
 
 ### Part 2: Analyze the Petclinic App using Konveyor Custom Rules
 
-1. Based on the lessons learned from the previous section, let's develop custom rules that incorporate the identified issues and their corresponding solutions.
+* Based on the lessons learned from the previous section, let's develop custom rules that incorporate the identified issues and their corresponding solutions.
 
 ```
 <?xml version="1.0"?>
@@ -174,36 +174,36 @@ Here's the high-level view of the deployment,
 </ruleset>
 ```
 
-Rule 1: hazelcast-cloud-readiness-hz001
+*Rule 1: hazelcast-cloud-readiness-hz001* :
 Looks for the discovery methods that are not working as expected in Kubernetes and suggest a solution that works in the Kubernetes environment.
 
 
-Rule 2: hazelcast-cloud-readiness-hz002
+*Rule 2: hazelcast-cloud-readiness-hz002* :
 If the Hazelcast dependency is between version 2.0 and 4.2.7, it advises upgrading the dependency to version 5.0.0 or above
 
-2. Let's integrate these custom rules into the Konveyor UI, so that it is easily accessible during the application analysis phase.
+* Let's integrate these custom rules into the Konveyor UI, so that it is easily accessible during the application analysis phase.
 
     a. Open the Konveyor UI and Navigate to the 'Administrator' view
     b. Click on the `Custom Migration Targets` link from the side navigation. 
-    ![](customtargets.png)
+![](customtargets.png)
     c. Click on the 'Create New' button in the upper right corner to open the `New Custom Target` wizard.
         * Download the custom rule from [here](https://gist.github.com/savitharaghunathan/8e743daa96fc8f23da511b95d44fc2b1) and save it with an extension '.windup.xml'. Upload the file to the wizard and click on create button.
 ![](newcustomtarget.png)
     d. Once created, the custom target is ready to be used in the Analysis of the application.
     
-3. Select the 'Migration' view and click on the 'Analysis' tab
+* Select the 'Migration' view and click on the 'Analysis' tab
 
-    a. Create an app entry called `petclinic` in the `Analysis` tab of the tackle ui. 
+a. Create an app entry called `petclinic` in the `Analysis` tab of the tackle ui. 
     * Fill in the name of the application
     * Expand the source code and enter the following
         * Repository Type: Git
-        * Source Repository: https://github.com/savitharaghunathan/spring-framework-petclinic.git/
+        * Source Repository: https://github.com/konveyor/spring-framework-petclinic.git/
         * Branch: legacy
         * Root path: /
 
     * Click on the `Create`  button.
 
-    b. Select the `petclinic` app and click on the `Analyze` button.
+b. Select the `petclinic` app and click on the `Analyze` button.
 
     * An application analysis wizard will open. 
         * Select `Source Code` in the dropdown and click the `Next` button
@@ -218,20 +218,20 @@ If the Hazelcast dependency is between version 2.0 and 4.2.7, it advises upgradi
 
 
 
-    c. You will notice that the status of the app has been updated to `In Progess`. Wait until it changes to `Completed`.
+c. You will notice that the status of the app has been updated to `In Progess`. Wait until it changes to `Completed`.
 
-    d. Expand the app, and click on the Analysis `Report` hyperlink
+d. Expand the app, and click on the Analysis `Report` hyperlink
     ![](reportlink.png)
 
 
-    e. Tackle Analysis dashboard gets opened in a new tab.
+e. Tackle Analysis dashboard gets opened in a new tab.
     ![](applicationlist.png)
 
     
-4. Click on the `spring-framework-petclinic` hyperlink and a dashboard gets displayed. Navigate to the `Issues` tab where you can explore the issues. Pay attention to the ones that are categorized as `Cloud Mandatory` as they have to be addressed for a successful migration to Kubernetes.
+* Click on the `spring-framework-petclinic` hyperlink and a dashboard gets displayed. Navigate to the `Issues` tab where you can explore the issues. Pay attention to the ones that are categorized as `Cloud Mandatory` as they have to be addressed for a successful migration to Kubernetes.
 ![](issuelist.png)
 
-5. Expand on `Embedded Hazelcast` and `Embedded Hazelcast dependencies` to view the issues. These are the result of the custom target we added in Step 2.
+* Expand on `Embedded Hazelcast` and `Embedded Hazelcast dependencies` to view the issues. These are the result of the custom target we added in Step 2.
 ![](issues.png)
 
 [Click here to watch the video for part 2 in action - Konveyor Analysis with custom rules](https://www.youtube.com/watch?v=YOlmajHAxUI)
@@ -243,21 +243,21 @@ By integrating the custom rules into Konveyor, you are not only addressing the s
 
 To better understand the scenario, let's take a closer look at the original state of the Petclinic application code before the update. As we delved into the analysis process in part 2 of this tutorial, it became apparent that there were certain issues related to Hazelcast that needed attention. These issues were effectively flagged by the Konveyor Analysis module. In this part, we will address those issues in the petclinic app and deploy the refactored app to Kubernetes. 
 
-1. Let's apply the changes suggested in part 2 to the application. You can find the source code for the refactored app [here](https://github.com/konveyor/spring-framework-petclinic/tree/petclinic-kube)
+* Let's apply the changes suggested in part 2 to the application. You can find the source code for the refactored app [here](https://github.com/konveyor/spring-framework-petclinic/tree/petclinic-kube)
 
-2. Before deploying the app, let's add the required RBAC permissions that allow Hazelcast to talk to the K8s API
+* Before deploying the app, let's add the required RBAC permissions that allow Hazelcast to talk to the K8s API
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/konveyor/spring-framework-petclinic/petclinic-kube/hazelcast-kube.yaml
 ```
 
-3. Deploy the refactored application
+* Deploy the refactored application
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/konveyor/spring-framework-petclinic/petclinic-kube/petclinic.yaml
 ```
 
-4. Obtain the ingress of the refactored app deployment using 
+* Obtain the ingress of the refactored app deployment using 
 
 ```
 kubectl get ing -n petclinic-kube
@@ -266,7 +266,7 @@ and access the app using the format `<ing-address>/petclinic`
 
 ![Refactored App](petclinic-rk.png)
 
-5. Navigate through the app and you will notice that the session data remains the same irrespective of the pod that is serving the request.
+* Navigate through the app and you will notice that the session data remains the same irrespective of the pod that is serving the request.
 
 [Click here to watch the video for part 3 in action - Refractor and Deploy to K8s](https://www.youtube.com/watch?v=mLJcynCYPR4)
 <YouTube youTubeId="mLJcynCYPR4" />
