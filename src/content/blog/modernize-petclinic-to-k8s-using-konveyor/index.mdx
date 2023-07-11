@@ -101,6 +101,7 @@ Here's the high-level view of the deployment,
 
 ### Part 2: Analyze the Petclinic App using Konveyor Custom Rules
 
+##### Step 1
 * Based on the lessons learned from the previous section, let's develop custom rules that incorporate the identified issues and their corresponding solutions.
 
 ```
@@ -181,40 +182,42 @@ Looks for the discovery methods that are not working as expected in Kubernetes a
 *Rule 2: hazelcast-cloud-readiness-hz002* :
 If the Hazelcast dependency is between version 2.0 and 4.2.7, it advises upgrading the dependency to version 5.0.0 or above
 
+##### Step 2
 * Let's integrate these custom rules into the Konveyor UI, so that it is easily accessible during the application analysis phase.
 
-    a. Open the Konveyor UI and Navigate to the 'Administrator' view
-    b. Click on the `Custom Migration Targets` link from the side navigation. 
+a. Open the Konveyor UI and Navigate to the 'Administrator' view
+b. Click on the `Custom Migration Targets` link from the side navigation. 
 ![](customtargets.png)
-    c. Click on the 'Create New' button in the upper right corner to open the `New Custom Target` wizard.
-        * Download the custom rule from [here](https://gist.github.com/savitharaghunathan/8e743daa96fc8f23da511b95d44fc2b1) and save it with an extension '.windup.xml'. Upload the file to the wizard and click on create button.
+c. Click on the 'Create New' button in the upper right corner to open the `New Custom Target` wizard.
+* Download the custom rule from [here](https://gist.github.com/savitharaghunathan/8e743daa96fc8f23da511b95d44fc2b1) and save it with an extension '.windup.xml'. Upload the file to the wizard and click on create button.
 ![](newcustomtarget.png)
-    d. Once created, the custom target is ready to be used in the Analysis of the application.
+d. Once created, the custom target is ready to be used in the Analysis of the application.
     
+##### Step 3
 * Select the 'Migration' view and click on the 'Analysis' tab
 
 a. Create an app entry called `petclinic` in the `Analysis` tab of the tackle ui. 
-    * Fill in the name of the application
-    * Expand the source code and enter the following
-        * Repository Type: Git
-        * Source Repository: https://github.com/konveyor/spring-framework-petclinic.git/
-        * Branch: legacy
-        * Root path: /
+* Fill in the name of the application
+* Expand the source code and enter the following
+    * Repository Type: Git
+    * Source Repository: https://github.com/konveyor/spring-framework-petclinic.git/
+    * Branch: legacy
+    * Root path: /
 
     * Click on the `Create`  button.
 
 b. Select the `petclinic` app and click on the `Analyze` button.
 
-    * An application analysis wizard will open. 
-        * Select `Source Code` in the dropdown and click the `Next` button
+* An application analysis wizard will open. 
+	* Select `Source Code` in the dropdown and click the `Next` button
      
-        * In the `Set Targets` pane, select `Containerization` as well as 'Hazelcast Session Management' options and click `Next`
-        ![](customtargetselection.png)
+    * In the `Set Targets` pane, select `Containerization` as well as 'Hazelcast Session Management' options and click `Next`
+    ![](customtargetselection.png)
 
-        * For scope, select `Application and internal dependencies only` 
-        * Keep the defaults in the Advanced section
-        * Move to the `Review` pane, and click on the`Run` button
-        ![](review.png)
+    * For scope, select `Application and internal dependencies only` 
+    * Keep the defaults in the Advanced section
+    * Move to the `Review` pane, and click on the`Run` button
+    ![](review.png)
 
 
 
@@ -227,10 +230,11 @@ d. Expand the app, and click on the Analysis `Report` hyperlink
 e. Tackle Analysis dashboard gets opened in a new tab.
     ![](applicationlist.png)
 
-    
+##### Step 4    
 * Click on the `spring-framework-petclinic` hyperlink and a dashboard gets displayed. Navigate to the `Issues` tab where you can explore the issues. Pay attention to the ones that are categorized as `Cloud Mandatory` as they have to be addressed for a successful migration to Kubernetes.
 ![](issuelist.png)
 
+##### Step 5
 * Expand on `Embedded Hazelcast` and `Embedded Hazelcast dependencies` to view the issues. These are the result of the custom target we added in Step 2.
 ![](issues.png)
 
