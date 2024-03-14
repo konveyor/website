@@ -1,5 +1,5 @@
 ---
-title: State of Application Modernization Report 2022
+title: State of Application Modernization Report 2024
 description: >-
   Both anecdotes and past surveys tell us that organizations are modernizing their applications. We wanted to dig deeper into the specifics. To do so, Konveyor community contributor Red Hat sponsored a survey of 600 IT decision makers (ITDM), backend developers, and software architects in the US, UK, and English-speaking Asia-Pacific (APAC).
 banner: report-22-banner.jpg
@@ -19,161 +19,149 @@ import SidebarTOC from '../../components/sidebar-toc'
 
 <MainCol>
 
-by Gordon Haff
+# The State of Application Modernization 2024 Report<a id="the-state-of-application-modernization-2024-report"></a>
 
-Both anecdotes and past surveys tell us that organizations are modernizing their applications. We wanted to dig deeper into the specifics. To do so, Konveyor community contributor Red Hat sponsored a survey of 600 IT decision makers (ITDM), backend developers, and software architects in the US, UK, and English-speaking Asia-Pacific (APAC). We surveyed these respondents, drawn from third-party databases, in October and November of 2021. Their companies had to have an internal app dev team and had to be using or planning to use hybrid cloud or multicloud as well as containers (the overwhelming majority were already using both). Here are some of the things they told us.
+_Gordon Haff_
 
-## Modernization is happening quickly
+**Organizations take a variety of different approaches to modernizing their applications as they target improving security, reliability, and scalability. Relative to our last survey, two years ago, we’re seeing a greater emphasis on updating legacy applications and infrastructure over building new cloud applications.**
 
-![Companies plan for more than half of their custom applications to be modernized within the next year.](modernization-plan.svg)
 
-We sought out respondents who were modernizing or planning to modernize their custom apps in some manner, so it’s no surprise that everyone we surveyed is modernizing. What’s perhaps less expected is how quickly they’re planning to modernize. Companies are planning to modernize over half of their custom applications during the next year and over a quarter during the next six months. Only 20% expected the modernization to take more than two years.
+## About the survey<a id="about-the-survey"></a>
 
-Does that seem a bit… optimistic? It does. Indeed, as was something of a theme throughout this survey, developers were less confident than their ITDM and architect counterparts that modernization would be either quick or straightforward.
+Konveyor community member Red Hat partnered with research firm Illuminas to better understand how organizations plan to approach application modernization and migration—and what they consider success to look like. In all, 1,000 responses were gathered with half coming from the US and the balance split evenly between the United Kingdom (UK) and English-speaking Asia-Pacific (APAC). Half of the respondents were IT decision makers, a quarter were back-end developers, and a quarter software architects. Most respondents were large enterprises with more than 5,000 employees with the rest working for medium enterprises. A variety of industries including retail, software development, finance, and telecoms were represented.
 
-The barriers cited by respondents provide additional evidence that modernization projects won’t always be smooth sailing. All regions except the UK said that resistance to change was the top barrier—and in the UK it was still near the top. The fact that this is a cultural challenge far more than a technical one suggests that overcoming such a barrier may be difficult and require senior management buy-in. Other top barriers were related concerns like time constraints, cost and budget constraints, and lack of skilled resources. Skills shortages in particular are a common theme almost across the board when we conduct surveys about important IT initiatives.
+This survey was conducted in October and November of 2023. An earlier version was conducted in 2021. Many findings are similar across the two surveys. However, because we made a fair number of methodology adjustments, where there are differences we’re just going to highlight a few _major_ changes.
 
-However, even if you think that a lot of modernization projects are likely to slip out, the data certainly points to an intent to rapidly modernize.
+With that background, let’s dive into some of the details about what we found.
 
-## There’s no single app modernization strategy
 
-![Companies intend to replatform, refactor, or repurchase just over half of their custom legacy applications.](replatform-plan.svg)
+## Why are organizations modernizing?<a id="why-are-organizations-modernizing"></a>
 
-In considering app modernization strategies, we presented survey respondents with six choices, the widely used six Rs. These are:
+The primary drivers of application modernization—security, reliability, and scalability—are familiar. These drivers, or variants of them, pop up in many of our surveys when we ask questions about things like the expected benefits of digital transformation. Survey respondents almost universally said all three of these drivers were factors in their organization’s decision to modernize their applications. Over 70% also evaluate success based on the results in the same 3 areas.
 
-- **Retire:** Sunset or decommission applications that are no longer needed
-- **Retain:** Leave critical applications as-is until refactoring is required
-- **Rehost:** Copy applications to a cloud (whether hosted or on-prem) with minimal changes, i.e. “lift and shift”
-- **Replatform:** Use a cloud migration to upgrade operating systems, databases, and other components as needed in order to cloud-enable applications without changing core application code or architecture
-- **Refactor:** Re-architect as cloud-native, for example, by containerizing workloads or moving them to a serverless architecture
-- **Repurchase:** Move from perpetual licenses to a Software-as-a-Service (SaaS) model
+How are they doing? Pretty well.
 
-That’s quite the range of options and they’re all being used to significant degrees. Retire and retain were each about half as popular than the four other options — which each captured about 20% of the applications being modernized. The overall story is definitely about matching the application modernization strategy to a given workload and company need rather than there being a single dominant approach across companies.
+If we look at the drivers individually, the most respondents (58%) have already seen security benefits but the majority have also seen reliability (52%) and scalability (53%) benefits. In the context of application modernization projects that are mostly still ongoing, these should be viewed as a very positive sign of the value that application modernization can bring. It’s even more impressive if we look at whether respondents have seen benefits in at least one category. Viewed that way, almost all (98%) have experienced a benefit in at least a single critical area.
 
-We again see developers being more cautious or pessimistic about more aggressive modernization approaches; they were more likely to intend to rehost relative to ITDMs and architects. We sometimes hear about “resume-driven development,” whereby developers supposedly want to gain experience in new technologies, even if doing so increases complexity. However, the developers in our survey were more likely to favor lower risk and lower effort approaches.
+_\[Image 1 - Modernization delivers benefits in the areas that matter most.png]_![](src/pages/modernization-report/img1.png)
 
-We also found that refactoring, which is the most involved modernization approach, is almost always a two-step approach. 90% of those who plan to refactor any legacy apps intend to replatform them first.
 
-## The US is further along than others
+## There isn’t one definition of application modernization<a id="there-isnt-one-definition-of-application-modernization"></a>
 
-<div className="table-container" tabindex="0">
-  <table className="table table-fixed">
-    <tr>
-      <th></th>
-      <th>US</th>
-      <th>UK</th>
-      <th>APAC</th>
-    </tr>
-    <tr>
-      <th scope="row">Unique Definitions of App Modernization</th>
-      <td>Using microservices architecture in the cloud</td>
-      <td>Improving CI/CD</td>
-      <td>Improving CI/CD</td>
-    </tr>
-    <tr>
-      <th scope="row">Unique Reasons for App Modernization</th>
-      <td>Decrease costs</td>
-      <td>Decrease costs</td>
-      <td>Improve security improve customer experience</td>
-    </tr>
-    <tr>
-      <th scope="row">Unique Barriers</th>
-      <td>
-        <ul>
-          <li>Difficulty determining the right approach</li>
-          <li>Do no see the value of modernizing</li>
-        </ul>
-      </td>
-      <td>Have not faces any barriers</td>
-      <td>Have not faced any barriers</td>
-    </tr>
-    <tr>
-      <th scope="row">Unique Challenges</th>
-      <td>Difficulty determining the right approach</td>
-      <td>No differentiating challenges</td>
-      <td>No differentiating challenges</td>
-    </tr>
-    <tr>
-      <th scope="row">Unique Success Measures</th>
-      <td>Decreased cost</td>
-      <td>increased customer satisfaction</td>
-      <td>Improved security increased customer satisfaction</td>
-    </tr>
-    <tr>
-      <th scope="row">Legacy App Strategy</th>
-      <td>More likely to retire or retain applications</td>
-      <td>More likely to rehost or repurchase applications</td>
-      <td>Most likely to rehost or repurchase applications</td>
-    </tr>
-    <tr>
-      <th scope="row">Unique App Modernization Priorities</th>
-      <td>No differentiating Priorities</td>
-      <td>Data/analytics/BI applications</td>
-      <td>
-        <ul>
-          <li>Customer-facing applications</li>
-          <li>Data/analytics/BI applications</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
-</div>
+This year respondents said that improving CI/CD (continuous integration/delivery) pipelines was their top definition of application modernization at 68%. This is significant for a couple of reasons.
 
-We don’t generally find striking differences between regions but we do sometimes see more subtle ones that form something of a pattern, as was the case here.
+First, this percentage is markedly higher than in our 2021 survey when containerizing workloads was at the top of the list while improving CI/CD was near the bottom. We rarely see this degree of change from survey to survey. This was one of several responses that suggest on traditional IT fundamentals and at least incrementally reduced emphasis on certain newer technologies.
 
-In this case, we see the US uniquely defining app modernization as “Using microservices architecture in the cloud” while the other two regions defined it as “Improving CI/CD.” This suggests that the US is further along in app modernization. Having a well-developed CI/CD pipeline is foundational to microservices and other cloud-native technology approaches.
+Second, it serves as a useful reminder that not everyone is on the cutting edge. All organizations continue to tweak their CI/CD pipelines to incorporate additional capabilities such as security scanning. However, those who have adopted modern best practices for software development can be reasonably assumed to have solid CI/CD processes in place overall. These numbers suggest that assumption doesn’t apply to everyone. We’ve seen similar trends in other practices over time that have become table stakes for advanced practitioners while others are just dipping their toe in the water.
 
-We see something similar crop up with respect to barriers and challenges. The UK and APAC haven’t faced any barriers. It’s reasonable to assume that’s because they haven’t gotten far enough into the process yet. By contrast, the US is focused on the “Difficulty determining the right approach,” suggesting that they’re actively figuring out the best way to implement a modernization strategy across their application portfolio.
+Another common definition is data modernization, commonly described as  updating and improving an organization's data infrastructure, tools, and practices to meet the evolving needs of data-driven business operations and analytics. It’s reasonable to assume that prepping for artificial intelligence/machine learning is an important rationale for thinking about application modernization in these terms. Data modernization also comes into play as part of modernizing the data exchange between applications and their components as they are updated, such as for distributed data in edge applications. (Other surveys we’ve conducted have found that integration issues are a consistent challenge for digital transformation projects.)
 
-## Increasing scalability and reliability trump cost reductions
+Rounding out the most common definitions were automating workloads and serverless computing. 
 
-![Companies plan to measure success of application modernization base on increased reliability and increased scalability.](measurement-plan.svg)
+_\[Image 2 - Understanding of application modernization.png]_![](src/pages/modernization-report/img2.png)
 
-How are companies going to measure the success of their application modernizations? Decreased costs are one factor. Costs always matter to at least some degree; ask anyone who has ever owned a budget. But increased reliability (especially in the US) and scalability were at the top of the list overall, with security high up as well.
+_\[Image 3 - Regional definitions of app modernization are mostly consistent.png]_\
+![](src/pages/modernization-report/img3.png)
 
-This was a question that had significant regional differences. Improving security was a significantly higher-ranked measure in APAC than in other regions and even edged out increased scalability there. APAC was also much more likely to measure increased customer satisfaction—especially relative to the US.
 
-## AI/ML, data caching, and high performance computing on the upswing
+## How are organizations modernizing? <a id="how-are-organizations-modernizing"></a>
 
-![More companies expect to have AI/ML software, data caching tools, and high performance computing workloads in place in the next 2 years.](ai-ml.svg)
+Modernization strategies are diverse and most commonly happen in multiple steps.
 
-While traditional workloads such as web servers, business process applications, and databases are the most common today, they’re not where workload growth is expected to be over the next two years. That would be AI/ML software, data caching (think Redis), and high performance computing, which are expected to grow at least 20% during that period. Analytics falls in between the two groups both in terms of level of usage today and its expected rate of growth.
+We asked respondents to answer the question: “What does your organization plan to do with the custom production applications it wants to modernize over the next two years?” The 6 choices we provided followed the 6 Rs framework, a model deriving from the 5 Rs created by market researcher Gartner in 2010 at a time when many businesses were starting to grapple with how best to move their legacy applications to a cloud. (Sometimes you’ll also see a 7 Rs variant.) You’ll find some differences in nomenclature from different sources but the overall framework is widely used.
 
-Thus, many new applications and application architectures are likely to be in emerging technology areas which include these high growth workloads. While most of the workloads were fairly consistent across regions, AI/ML in the US (68%) was markedly higher than in the UK (57%) which was higher than in APAC (43%).
+The 6 strategies are:
 
-## Is there a public cloud backlash?
+**Retire:** Sunset or decommission applications that are no longer needed
 
-![Companies expect a shift from public cloud toward private cloud deployment 2 years from now, especially in the UK and APAC.](private-cloud-shift.svg)
+**Retain:** Leave critical applications as-is until refactoring is required
 
-The overwhelming majority of the companies we surveyed run at least some of their production applications on a public cloud although a significant number also run on a private cloud—whether on-premise, off-premise, or both.
+**Rehost:** “Lift-and-shift” applications to a cloud (hosted or on-premise) without architectural changes
 
-The most striking thing about these numbers though is where they’re headed. The 98% of companies that have at least some production workloads on a public cloud today is expected to drop ten points over the next two years to 88%. This drop is almost entirely attributable to the UK and APAC with the US dropping only one point. In APAC specifically, a full 26% of companies plan to stop using public clouds for production workloads; most of those workloads would appear to be going to off-premise private clouds which have a commensurately large expected increase.
+**Replatform:** Optimize while migrating to the new platform to cloud-enable applications without changing core application code or architecture. (Sometimes referred to as “tweak, lift, and shift.”)
 
-What’s going on? Are public clouds falling out of favor?
+**Refactor:** Re-architect as cloud-native, for example, by containerizing workloads or moving them to a serverless architecture
 
-There’s some anecdotal evidence that data egress and a general lack of cost predictability have driven some companies to repatriate certain applications to private clouds. Furthermore, edge computing architectures distribute workloads so as to bring compute resources closer to data and user services. (Although they still often have a cloud component, whether on a public cloud or on-premise.)
+**Repurchase:** Move from perpetual licenses to a Software-as-a-Service (SaaS) model
 
-However, in the US, the percentage of companies with one or more production workloads on a public cloud is expected to stay essentially flat. This suggests that the significant expected shift in the UK and APAC numbers probably isn’t explained by cost and edge computing alone.
+The first conclusion we can draw from this survey—as well as others that we’ve done—is that there is no single dominant approach. Replatforming was the most common response at 20% and all the other responses were between 10% and 19%. Modernization strategies for custom applications are diverse and dependent on the applications being modernized, the sophistication of the organization, and even where the respondent sits in the organization. 
 
-Based on other surveys we’ve conducted, those other reasons may relate to data privacy, data security, and data sovereignty concerns. It’s not a stretch to imagine that these concerns might be heightened in the UK and APAC, especially in light of the fact that the three large global public cloud providers are all headquartered in the US.
+The other conclusion that we can confidently draw is that application modernization is not a one and done project. Rather, there’s a clear incremental path to re-architected applications. Just 15% of respondents plan to go straight to refactoring. But that doesn’t mean refactoring is off the table for the future. Indeed, 47% plan to replatform and then refactor. Another 38% plan to rehost, then replatform, and only then refactor. (Among organizations who describe their application modernization as a continuous process, this last category shoots all the way up to 52%.)
 
-The above notwithstanding, however, backlash is probably too strong a term. Rather, with 77% already having a hybrid cloud infrastructure, the results suggest that companies are just increasingly sophisticated in placing workloads on the best kind of infrastructure for the purpose rather than taking more of a one-size-fits-all approach.
+_\[Image 4 - Modernization strategies are varied.png]_![](src/pages/modernization-report/img4.png) __
 
-## Slide deck with all findings
 
-<iframe
-  title="Slide show"
-  className="slideshow-embed"
-  src="//www.slideshare.net/slideshow/embed_code/key/dzZBaPbvZ3IMZc"
-  frameborder="0"
-  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>
+## What does application modernization focus on?<a id="what-does-application-modernization-focus-on"></a>
 
-[State of application modernization 2022](https://www.slideshare.net/KonveyorIO/state-of-application-modernization-2022) from [Konveyor Community](https://www.slideshare.net/KonveyorIO)
+We can roughly lump application modernization into two buckets: 
 
----
+1. Modernizing existing (legacy) infrastructure/applications and 
+
+2. Delivering or building new infrastructure, cloud services, and modern or native cloud-native applications or other modern IT services. 
+
+We found that 59% of modernization budgets were in service of the 1st category with the remaining 41% falling into the 2nd. Results across regions were essentially identical.
+
+Relative to our survey two years ago, the budget allocation for modernization has shifted _much_ more toward updating legacy applications and infrastructure relative to building new applications and infrastructure in the cloud. The numbers roughly flipped between the two surveys and would seem where there is a renewed focus on IT fundamentals.
+
+Digging deeper into the types of applications being prioritized for modernization reinforces this view.
+
+Core back-end applications are the top priority at 41% followed by data/analytics/business intelligence applications at 35%. (This again highlights the importance of data for AI and related technologies.) Here, the result did vary by region with APAC approximately flipping the back-end applications and data-related application numbers. Across all geographies, customer-facing applications were a relatively low priority at 14% overall.
+
+These numbers provide an interesting counterpoint to the bimodal (or fast/slow) IT idea that was making the rounds about a decade ago. It came from a school of thought that legacy back-end applications would tend to be set off to the side and minimally changed—Retained in 6 Rs terminology—while all the exciting action would be on new customer-facing applications and services. 
+
+The results from this survey show that, in fact, companies are prioritizing the applications that run their businesses and the data that informs their business decisions. However, new applications and services —including customer-facing applications— are certainly being delivered as well.
+
+_\[A focus on legacy apps and infrastructure \[_[_slide 21 complete_](https://docs.google.com/presentation/d/1BJJSCFDb-1Y0aSZ1tXj6MZ_oC-Wy4uawKfa9lf4EEc4/edit#slide=id.g2a0dee27665_1_813)_] with a continued focus on core back-end business applications and an increased focus on data/bi \[_[_slide 22 complete_](https://docs.google.com/presentation/d/1BJJSCFDb-1Y0aSZ1tXj6MZ_oC-Wy4uawKfa9lf4EEc4/edit#slide=id.g2a0dee27665_1_853)_]]_
+
+_\[Image 5 - Organizations are increasingly prioritizing legacy apps infrastructure.png]_![](src/pages/modernization-report/img5.png)
+
+_\[Image 6 - Business applications remain a top priority for modernization.png]_![](src/pages/modernization-report/img6.png)
+
+
+## What are organizations doing to address modernization challenges? <a id="what-are-organizations-doing-to-address-modernization-challenges"></a>
+
+Complexity dominates the top organizational challenges with 48% of respondents identifying this particular challenge. In the early stages of application modernization, it’s even higher—58%. In early stages, determining the right approach was also high on the list at 55% although, even beyond early stages, it still ranked high at 41%.
+
+However, companies are taking steps to address the challenges faced at both the organizational and individual levels. One US-based IT decision maker recommended that you “set clear objectives and goals for the modernization process, establish a dedicated modernization team, and conduct a comprehensive assessment of your current application portfolio.” The quantitative results from our survey similarly emphasized up-front planning and a systematic approach with researching/adopting additional tools, API-driven development, building a business case, and implementingDevOps practices at the top of the list when it came to actions their organizations are taking in response to modernization challenges.
+
+_\[Image 7 - Top challenges - individual vs. organization.png]_![](src/pages/modernization-report/img7.png)
+
+_\[Image 8 - Organizations are taking action to address challenges.png]_![](src/pages/modernization-report/img8.png)
+
+
+## AI has an important emerging role in application modernization <a id="ai-has-an-important-emerging-role-in-application-modernization"></a>
+
+The surprise would probably be if AI _didn’t_ somehow factor into application modernization, given its important emerging role in so many areas of IT and elsewhere. Over 75% of organizations surveyed are using AI to support the application modernization process. Using AI to facilitate modernization is most common (53%) but a significant number (42%) is also, or alternatively, adding AI to existing legacy applications to modernize them.
+
+Performance optimization is the most common use case by a significant margin—complex distributed systems increasingly exceed the ability of people to effectively tune them by hand, hence AIOps. However, automation both of manual tasks broadly and testing/QA specifically are also important roles for AI. Directly assisting in writing code, on the other hand, seems to still be relatively nascent and was less cited than other uses notwithstanding the buzz (and sometimes controversy) around large language models (LLM) in many developer circles.
+
+Overall, most organizations are already using AI to support application modernization and the activity is quite consistent across geographies.
+
+_\[Image 9 - Emerging role of AI in application modernization.png]_![](src/pages/modernization-report/img9.png)
+
+
+## What does this mean for you?<a id="what-does-this-mean-for-you"></a>
+
+Our respondents had some sound advice to offer, both about getting started and keeping projects on track along the way.
+
+With respect to kicking off an application modernization project, an IT decision maker from APAC emphasized how “setting realistic and clear goals before you start your modernization journey gives you greater control over the upgrade process.” Themes among the decision makers, architects, and developers we spoke with included: up-front planning, incremental approaches, and having the right team that’s well-equipped.
+
+The decision makers we spoke with also had advice for once modernization projects were kicked off. One of them from the UK recommended that “firms should invest in monitoring and visualization solutions for more successful application and system modernization. These systems provide more information about the current state and performance of applications.” Another decision maker from the US emphasized training “your workforce to use and maintain new applications through best practices and governance.”
+
+Overall, there are some clear common themes: have a concrete goal, plan, enable the right team, and continuously monitor (including vulnerability scanning). Interestingly, hiring subject matter experts and providing additional training weren’t the priorities that we’ve seen across other surveys. One reason is that there seems to be at least incrementally more focus on outsourcing—such as managed services—and consulting with communities and vendors on best practices among the respondents here. Skilling up still matters. But so does leaning on third-party expertise and capabilities when available and appropriate.
+
+_\[Image 10 - Key takeaways.png]_![](src/pages/modernization-report/img10.png)
+
+_\[Image 11 - Advice for those starting application modernization.png]_![](src/pages/modernization-report/img11.png)
+
+
+## Slide deck with all findings<a id="slide-deck-with-all-findings"></a>
+
+![](https://www.slideshare.net/slideshows/state-of-application-modernization-2024-report/266788439)
+
+[State of application modernization 2024](https://www.slideshare.net/slideshows/state-of-application-modernization-2024-report/266788439) from [Konveyor Community](https://www.slideshare.net/KonveyorIO)
 
 _Gordon Haff is Technology Advocate at Red Hat where he works on emerging technology strategy; writes about tech, trends, and their business impact; and is a frequent speaker at customer and industry events. Among the topics he works on are edge, blockchain, AI, quantum, cloud-native platforms, and next-generation application architectures. His books include From Pots and Vats to Programs and Apps and How Open Source Ate Software. His current podcast is Innovate @ Open. Prior to Red Hat, as an industry analyst, Gordon wrote hundreds of research notes, was frequently quoted in major publications on a wide range of IT topics, and advised clients on product and marketing strategies._
 
+__
 </MainCol>

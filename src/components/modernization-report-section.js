@@ -19,7 +19,7 @@ export default function ModernizationReport({ headingStyle, paragraphStyle }) {
           </a>
           <div>
             <h2 className={`${headingStyle} !text-left text-primary-800`}>
-              The State of Application Modernization Report 2022
+              The State of Application Modernization Report 2024
             </h2>
             <p className={`${paragraphStyle} text-base-800`}>
               Learn why enterprises plan to modernize more than half of their existing applications
