@@ -376,7 +376,7 @@ code[class*='language-'] {
 }
 
 .dark code[class*='language-'] {
-  @apply bg-alert-200 text-base-900;
+  @apply text-base-900;
 }
 
 .dark pre code[class*='language-'] {
